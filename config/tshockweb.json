@@ -1,0 +1,18 @@
+{
+  "tshock_web": {
+    "version": 0.1,
+    "api": {
+      "host": "0.0.0.0",
+      "port": 14789,
+      "debug": true
+    },
+    "web": {
+      "location": "webapps"
+    }
+  },
+  "tshock_server": {
+    "host": "venus.jonaslibbrecht.be",
+    "port": 7878,
+    "protocol": "http"
+  }
+}
