@@ -1,6 +1,5 @@
 import json
 import requests
-import timeout_decorator
 
 
 class HttpException(RuntimeError):
@@ -23,8 +22,6 @@ class TSHOCKClient(object):
         """
         Initializes the object with credentials and connection information
         """
-        if username is None and password is None:
-            raise RuntimeError('Empty credentials provided')
         self.ip = ip
         self.port = port
         self.username = username
@@ -42,7 +39,6 @@ class TSHOCKClient(object):
         else:
             self.validate()
 
-    @timeout_decorator.timeout(10)
     def _connect(self):
         """
         Authenticates to the api
@@ -58,7 +54,6 @@ class TSHOCKClient(object):
 
         self._token = response['token']
 
-    @timeout_decorator.timeout(10)
     def validate(self):
         """
         Validates if the authentication token works
@@ -105,7 +100,6 @@ class TSHOCKClient(object):
         else:
             return parsed_response
 
-    @timeout_decorator.timeout(10)
     def _call(self, path, function, params, old_api=False, version=None):
         """
         Performs a call based on the given parameters
@@ -146,7 +140,6 @@ class TSHOCKClient(object):
                 return raw_response
             raise
 
-    @timeout_decorator.timeout(10)
     def delete(self, path, params={}, old_api=False, version=None):
         """
         Executes a DELETE call
@@ -164,7 +157,6 @@ class TSHOCKClient(object):
         """
         return self._call(path=path, params=params, function=requests.delete, old_api=old_api, version=version)
 
-    @timeout_decorator.timeout(10)
     def get(self, path, params={}, old_api=False, version=None):
         """
         Executes a GET call
@@ -181,7 +173,6 @@ class TSHOCKClient(object):
         """
         return self._call(path=path, params=params, function=requests.get, old_api=old_api, version=version)
 
-    @timeout_decorator.timeout(10)
     def post(self, path, params={}, old_api=False, version=None):
         """
         Executes a POST call
@@ -198,7 +189,6 @@ class TSHOCKClient(object):
         """
         return self._call(path=path, params=params, function=requests.post, old_api=old_api, version=version)
 
-    @timeout_decorator.timeout(10)
     def put(self, path, params={}, old_api=False, version=None):
         """
         Executes a PUT call
