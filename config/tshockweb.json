@@ -13,7 +13,7 @@
     }
   },
   "tshock_server": {
-    "host": "venus.jonaslibbrecht.be",
+    "host": "epic-ip-address",
     "port": 7878,
     "protocol": "http"
   }

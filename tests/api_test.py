@@ -4,7 +4,7 @@ from thw.helpers.api import TSHOCKClient
 # https://tshock.atlassian.net/wiki/display/TSHOCKPLUGINS/REST+API+Endpoints &
 # https://tshock.atlassian.net/wiki/display/TSHOCKPLUGINS/Commands+List
 
-api = TSHOCKClient(ip="venus.jonaslibbrecht.be", port=7878, username='Kinvaris', password='CEmoh534')
+api = TSHOCKClient(ip="epic-ip-address", port=7878, username='epic-username', password='epic-password')
 print api.get(path="server/broadcast", params={'msg': 'bla bla'})
 print api.get(path="server/status")
 print api.validate()
