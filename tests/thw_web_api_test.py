@@ -2,9 +2,6 @@ import json
 import requests
 from thw.helpers.api import TSHOCKClient
 
-username = "Kinvaris"
-password = "CEmoh534"
-
 # setup api
 api = TSHOCKClient(ip="epic-ip-address", port=7878, username='epic-username', password='epic-password')
 
