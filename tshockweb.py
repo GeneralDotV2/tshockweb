@@ -1,5 +1,6 @@
 import json
 from functools import wraps
+from requests import ConnectionError
 from thw.helpers.decorators import pack
 from thw.helpers.system import SystemHelper
 from thw.helpers.api import TSHOCKClient, HttpException
@@ -29,10 +30,16 @@ def authenicate(func):
                 TSHOCKClient(ip=settings['tshock_server']['host'],
                              port=settings['tshock_server']['port'], token=content['token'])
             else:
-                raise HttpException(403, 'No token provided')
+                raise RuntimeError(403, 'No token provided')
             return func(*args, **kwargs)
-        except (HttpException, RuntimeError) as ex:
+        except HttpException as ex:
             return jsonify({'status': 403, 'result': ex.message, 'valid': False})
+        except RuntimeError as ex:
+            return jsonify({'status': 403, 'result': ex.message, 'valid': True})
+        except ConnectionError:
+            return jsonify({'status': 500, 'result': 'Connection errors to TSHOCK server, '
+                                                     'probably a wrong IP/PORT provided in `config/tshockweb.json`',
+                            'valid': False})
 
     return validate
 
@@ -72,14 +79,20 @@ def login():
                 raise HttpException(403, 'No username/password provided')
         else:
             raise HttpException(403, 'No username/password provided')
-    except (HttpException, RuntimeError) as ex:
-        return str(ex.message), 403
+    except HttpException as ex:
+            return jsonify({'status': 403, 'result': ex.message, 'valid': False})
+    except RuntimeError as ex:
+        return jsonify({'status': 403, 'result': ex.message, 'valid': True})
+    except ConnectionError:
+        return jsonify({'status': 500, 'result': 'Connection errors to TSHOCK server, '
+                                                 'probably a wrong IP/PORT provided in `config/tshockweb.json`',
+                        'valid': False})
 
 
-@app.route(API_BASE_PATH + "/validate")
+@app.route(API_BASE_PATH + "/validation")
 @authenicate
 @pack
-def validate():
+def validation():
     """
     Validate token on TSHOCK server
 
@@ -94,10 +107,6 @@ def documentation():
     """
     Documentation generator that generates the API documentation
 
-    @TODO: list argument names of every function with:
-               * FUNCTION.func_code.co_varnames
-               * FUNCTION.func_code.co_argcount
-
     :return:
     """
     docs = {}
@@ -110,8 +119,17 @@ def documentation():
                 files = SystemHelper.list_files(path='{0}/{1}/{2}'.format(settings['tshock_web']['api']['base'],
                                                                           directory, subdir), remove_suffix=True)
                 for filename in files:
-                    temp_subdir[filename] = SystemHelper.list_methods_of_module(path='{0}/{1}/{2}/{3}.py'.format(
+                    temp_subdir[filename] = {}
+                    methods = SystemHelper.list_methods_of_module(path='{0}/{1}/{2}/{3}.py'.format(
                         settings['tshock_web']['api']['base'], directory, subdir, filename), module_name=filename)
+                    for method in methods:
+                        # fetch method parameters
+                        current_class = SystemHelper.get_class_by_path(path='{0}/{1}/{2}/{3}.py'.format(
+                            settings['tshock_web']['api']['base'], directory, subdir, filename), module_name=filename)
+                        current_method = getattr(current_class, method)
+                        temp_subdir[filename][method] = [argument for argument in
+                                                         list(current_method.func_code.co_varnames)
+                                                         if 'api' not in argument and 'params' not in argument]
 
                 docs[directory] = temp_subdir
         else:
@@ -119,8 +137,16 @@ def documentation():
             files = SystemHelper.list_files(path='{0}/{1}'.format(settings['tshock_web']['api']['base'],
                                                                   directory), remove_suffix=True)
             for filename in files:
-                temp_subdir[filename] = SystemHelper.list_methods_of_module(path='{0}/{1}/{2}.py'.format(
+                temp_subdir[filename] = {}
+                methods = SystemHelper.list_methods_of_module(path='{0}/{1}/{2}.py'.format(
                     settings['tshock_web']['api']['base'], directory, filename), module_name=filename)
+                for method in methods:
+                    # fetch method parameters
+                    current_class = SystemHelper.get_class_by_path(path='{0}/{1}/{2}.py'.format(
+                    settings['tshock_web']['api']['base'], directory, filename), module_name=filename)
+                    current_method = getattr(current_class, method)
+                    temp_subdir[filename][method] = [argument for argument in list(current_method.func_code.co_varnames)
+                                                     if 'api' not in argument and 'params' not in argument]
             docs[directory] = temp_subdir
 
     return docs, 200

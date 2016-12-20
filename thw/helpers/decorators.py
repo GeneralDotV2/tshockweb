@@ -1,5 +1,6 @@
 from flask import jsonify
 from functools import wraps
+from requests import ConnectionError
 from thw.helpers.api import HttpException
 
 
@@ -16,8 +17,14 @@ def pack(func):
         try:
             result = func(*args, **kwargs)
             return jsonify({'status': result[1], 'result': result[0], 'valid': True})
-        except (HttpException, RuntimeError) as ex:
-            return jsonify({'status': 401, 'result': ex.message})
+        except HttpException as ex:
+            return jsonify({'status': 403, 'result': ex.message, 'valid': False})
+        except RuntimeError as ex:
+            return jsonify({'status': 403, 'result': ex.message, 'valid': True})
+        except ConnectionError:
+            return jsonify({'status': 500, 'result': 'Connection errors to TSHOCK server, '
+                                                     'probably a wrong IP/PORT provided in `config/tshockweb.json`',
+                            'valid': False})
 
     return validate
 

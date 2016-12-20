@@ -1,16 +1,12 @@
 import json
 import requests
-from thw.helpers.api import TSHOCKClient
-
-# setup api
-api = TSHOCKClient(ip="epic-ip-address", port=7878, username='epic-username', password='epic-password')
 
 #print requests.get('http://127.0.0.1:14789/api/login').text
 #print requests.get('http://127.0.0.1:14789/api/login', json={"username": None, "password": None}).text
-#print requests.get('http://127.0.0.1:14789/api/login', json={"username": "", "password": ""}).text
+print requests.get('http://127.0.0.1:14789/api/login', json={"username": "Kinvaris", "password": "CEmoh534"}).text
 
 response = json.loads(requests.get('http://127.0.0.1:14789/api/login',
-                                   json={"username": username, "password": password}).text)
+                                   json={"username": "Kinvaris", "password": "CEmoh534"}).text)
 print response
 #print requests.get('http://127.0.0.1:14789/api/validate', json={"token": response['result']['token']}).text
 #print requests.get('http://127.0.0.1:14789/api/model/lists/get_current_players').text

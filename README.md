@@ -25,6 +25,39 @@ from thw.helpers.api import TSHOCKClient
 api = TSHOCKClient(ip="tshock-api-url", port=7878, username='superadmin-username', password='superadmin-password')
 print PlayerList.get_current_players(api=api)
 ```
-* Easy REST API: `http://127.0.0.1:14789/api/config`
+
+* Default JSON output:
+```
+{
+  "result": {},  // result of the api call
+  "status": 200, // status code of tshockweb api call
+  "valid": true  // is valid call to the tshock terraria server
+}
+```
+
+* Easy REST API: 
+```
+import requests
+
+requests.get('http://127.0.0.1:14789/api/login', json={"username": "superadmin-username", "password": "superadmin-password"}
+{
+  "result": {
+    "token": "B542D501E90A62615F257BCCC47996B4597BAF0E06C9BB727785FFB880CA6F9E"
+  }, 
+  "status": 200, 
+  "valid": true
+}
+
+requests.get('http://127.0.0.1:14789/api/model/lists/players/get_current_players', json={"token": "B542D501E90A62615F257BCCC47996B4597BAF0E06C9BB727785FFB880CA6F9E"})
+{
+  "result": {
+    "api_path": "model/lists/players", 
+    "method": "get_current_players", 
+    "output": []
+  }, 
+  "status": 200, 
+  "valid": true
+}
 
 
+```

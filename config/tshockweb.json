@@ -13,7 +13,7 @@
     }
   },
   "tshock_server": {
-    "host": "epic-ip-address",
+    "host": "epic-url",
     "port": 7878,
     "protocol": "http"
   }
