@@ -9,7 +9,7 @@ from thw.controllers.world import WorldController
 from thw.helpers.api import TSHOCKClient, HttpException
 
 # setup api
-api = TSHOCKClient(ip="venus.jonaslibbrecht.be", port=7878, username='Kinvaris', password='CEmoh534')
+api = TSHOCKClient(ip="epic-ip-address", port=7878, username='epic-username', password='epic-password')
 
 # delete the things if already exists
 try:
