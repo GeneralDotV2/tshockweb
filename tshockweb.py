@@ -18,8 +18,7 @@ def authenicate(func):
     """
     Authenticate the provided token
 
-    :param func: function
-    :type func: Function
+    :return: function if token is valid, Response if token is invalid
     """
 
     @wraps(func)
@@ -47,26 +46,33 @@ def authenicate(func):
 @app.route(API_BASE_PATH)
 @pack
 def base():
+    """
+    Ping the client back that the API is working :)
+
+    :return: pong
+    """
     return 'The TSHOCK WEB API is working!', 200
 
 
 @app.route(API_BASE_PATH + "/config")
 @pack
 def config():
+    """
+    Fetch the config of tshockweb
+
+    :return: config settings
+    """
+
     return settings, 200
 
 
-@app.route(API_BASE_PATH + "/login")
+@app.route(API_BASE_PATH + "/login", methods=['POST'])
 @pack
 def login():
     """
     Login into the TSHOCK server
 
-    :param username: username of existing user
-    :type username: str
-    :param password: password of existing user
-    :type password: str
-    :return:
+    :return: dict if token is valid, string if token is invalid
     """
     content = request.json
     try:
@@ -80,23 +86,21 @@ def login():
         else:
             raise HttpException(403, 'No username/password provided')
     except HttpException as ex:
-            return jsonify({'status': 403, 'result': ex.message, 'valid': False})
+        return str(ex.message), 403
     except RuntimeError as ex:
-        return jsonify({'status': 403, 'result': ex.message, 'valid': True})
+        return str(ex.message), 403
     except ConnectionError:
-        return jsonify({'status': 500, 'result': 'Connection errors to TSHOCK server, '
-                                                 'probably a wrong IP/PORT provided in `config/tshockweb.json`',
-                        'valid': False})
+        return 'Connection errors to TSHOCK server, probably a wrong IP/PORT provided in `config/tshockweb.json`', 500
 
 
-@app.route(API_BASE_PATH + "/validation")
+@app.route(API_BASE_PATH + "/validation", methods=['POST'])
 @authenicate
 @pack
 def validation():
     """
     Validate token on TSHOCK server
 
-    :return:
+    :return: string if the token is valid
     """
     return 'The given token is valid!', 200
 
@@ -107,7 +111,7 @@ def documentation():
     """
     Documentation generator that generates the API documentation
 
-    :return:
+    :return: dict
     """
     docs = {}
 
@@ -152,10 +156,18 @@ def documentation():
     return docs, 200
 
 
-@app.route(API_BASE_PATH + "/<path:path>")
+@app.route(API_BASE_PATH + "/<path:path>", methods=['POST'])
 @authenicate
 @pack
 def serve_api(path):
+    """
+    Serve the PYTHON api through flask as REST API
+
+    :param path: api path + method (e.g. model/lists/players/get_current_players)
+    :type path: str
+    :return: results from path + method
+    """
+
     seperated_path = path.split('/')
 
     content = request.json
@@ -191,11 +203,24 @@ def serve_api(path):
 
 @app.route('/<path:filename>')
 def serve_files(filename):
+    """
+    Serves the HTML files for tshockweb
+
+    :param filename: a filename under `webapps` (e.g. html/pages/login.html)
+    :type filename: str
+    :return: file
+    """
+
     return send_from_directory(app.static_folder, filename)
 
 
 @app.route('/')
 def serve_homepage():
+    """
+    Serves the homepage for tshockweb
+
+    :return: file
+    """
     return redirect(settings['tshock_web']['web']['base_location'] + '/' + settings['tshock_web']['web']['homepage'])
 
 

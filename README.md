@@ -48,6 +48,8 @@ requests.get('http://127.0.0.1:14789/api/model/lists/players/get_current_players
   "status": 200, 
   "valid": true
 }
+
+curl -H "Content-Type: application/json" -X GET -d '{"username":"superadmin-username","password":"superadmin-password"}' http://localhost:14789/api/login
 ```
 
 * Default JSON output:
