@@ -3,6 +3,7 @@ from functools import wraps
 from requests import ConnectionError
 from thw.helpers.decorators import pack
 from thw.helpers.system import SystemHelper
+from thw.controllers.server import ServerController
 from thw.helpers.api import TSHOCKClient, HttpException
 from flask import Flask, send_from_directory, request, redirect, jsonify
 
@@ -91,6 +92,22 @@ def login():
         return str(ex.message), 403
     except ConnectionError:
         return 'Connection errors to TSHOCK server, probably a wrong IP/PORT provided in `config/tshockweb.json`', 500
+
+
+@app.route(API_BASE_PATH + "/logout", methods=['POST'])
+@authenicate
+@pack
+def logout():
+    """
+    Logout from the TSHOCK server
+
+    :return: message if logout was successful
+    """
+    content = request.json
+    if content is not None and 'token' in content:
+        api = TSHOCKClient(ip=settings['tshock_server']['host'],
+                           port=settings['tshock_server']['port'], token=content['token'])
+        return ServerController.destroy_token(api=api, token=content['token']), 200
 
 
 @app.route(API_BASE_PATH + "/validation", methods=['POST'])

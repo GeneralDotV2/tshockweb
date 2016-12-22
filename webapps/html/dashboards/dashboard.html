@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Material Admin - Dashboard</title>
+		<title>Dashboard</title>
 
 		<!-- BEGIN META -->
 		<meta charset="utf-8">
@@ -37,7 +37,7 @@
 						<li class="header-nav-brand" >
 							<div class="brand-holder">
 								<a href="../../html/dashboards/dashboard.html">
-									<span class="text-lg text-bold text-primary">MATERIAL ADMIN</span>
+									<span class="text-lg text-bold text-primary">TSHOCKWEB</span>
 								</a>
 							</div>
 						</li>
@@ -51,15 +51,6 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="headerbar-right">
 					<ul class="header-nav header-nav-options">
-						<li>
-							<!-- Search form -->
-							<form class="navbar-search" role="search">
-								<div class="form-group">
-									<input type="text" class="form-control" name="headerSearch" placeholder="Enter your keyword">
-								</div>
-								<button type="submit" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-search"></i></button>
-							</form>
-						</li>
 						<li class="dropdown hidden-xs">
 							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
 								<i class="fa fa-bell"></i><sup class="badge style-danger">4</sup>
@@ -124,7 +115,7 @@
 					<ul class="header-nav header-nav-profile">
 						<li class="dropdown">
 							<a href="javascript:void(0);" class="dropdown-toggle ink-reaction" data-toggle="dropdown">
-								<img src="../../assets/img/avatar1.jpg?1403934956" alt="" />
+								<img src="../../assets/img/terraria/user_logo.png" alt="" />
 								<span class="profile-info">
 									Daniel Johnson
 									<small>Administrator</small>
@@ -136,18 +127,10 @@
 								<li><a href="../pages/blog/post.html">My blog <span class="badge style-danger pull-right">16</span></a></li>
 								<li><a href="../pages/calendar.html">My appointments</a></li>
 								<li class="divider"></li>
-								<li><a href="../pages/locked.html"><i class="fa fa-fw fa-lock"></i> Lock</a></li>
-								<li><a href="../pages/login.html"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+								<li><a style="cursor: pointer;" id="tshockweb_logout"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
 							</ul><!--end .dropdown-menu -->
 						</li><!--end .dropdown -->
 					</ul><!--end .header-nav-profile -->
-					<ul class="header-nav header-nav-toggle">
-						<li>
-							<a class="btn btn-icon-toggle btn-default" href="#offcanvas-search" data-toggle="offcanvas" data-backdrop="false">
-								<i class="fa fa-ellipsis-v"></i>
-							</a>
-						</li>
-					</ul><!--end .header-nav-toggle -->
 				</div><!--end #header-navbar-collapse -->
 			</div>
 		</header>
@@ -1058,6 +1041,8 @@
 		<script src="../../assets/js/core/source/AppVendor.js"></script>
 		<script src="../../assets/js/core/demo/Demo.js"></script>
 		<script src="../../assets/js/core/demo/DemoDashboard.js"></script>
+		<script src="../../assets/js/libs/jquery-cookie/js.cookie-2.1.3.min.js"></script>
+		<script src="../../assets/js/core/tshockweb/Authenticate.js"></script>
 		<!-- END JAVASCRIPT -->
 
 	</body>

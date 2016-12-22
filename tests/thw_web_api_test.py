@@ -3,7 +3,7 @@ import requests
 
 #print requests.post('http://127.0.0.1:14789/api/login').text
 #print requests.post('http://127.0.0.1:14789/api/login', json={"username": None, "password": None}).text
-print requests.post('http://127.0.0.1:14789/api/login', json={"username": "uperadmin-username", "password": "superadmin-password"}).text
+#print requests.post('http://127.0.0.1:14789/api/login', json={"username": "superadmin-username", "password": "superadmin-password"}).text
 
 response = json.loads(requests.post('http://127.0.0.1:14789/api/login',
                                     json={"username": "superadmin-username", "password": "superadmin-password"}).text)
@@ -21,3 +21,4 @@ print requests.post('http://127.0.0.1:14789/api/model/lists/groups/get_group_by_
 #print requests.post('http://127.0.0.1:14789/api/config').text
 #print requests.post('http://127.0.0.1:14789/api').text
 #print requests.post('http://127.0.0.1:14789/api/documentation').text
+print requests.post('http://127.0.0.1:14789/api/logout', json={"token": response['result']['token']}).text

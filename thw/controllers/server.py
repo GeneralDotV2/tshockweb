@@ -78,3 +78,17 @@ class ServerController(object):
         """
 
         return api.get(path="server/reload", version='v3')
+
+    @staticmethod
+    def destroy_token(api, token):
+        """
+        Destroy a token on the tshock server (e.g. for user logout)
+
+        :param api: tshock client api
+        :type api: TSHOCKClient
+        :param token: a valid tshock api token
+        :type token: str
+        :return: dict
+        """
+
+        return api.get(path="token/destroy/{0}".format(token), old_api=True)['response']
