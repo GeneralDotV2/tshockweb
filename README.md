@@ -1,7 +1,10 @@
-# TSHOCK WEB
+# TSHOCK WEB V2
 
 ## Description
 This is the new, improved & lightweight version of the TSHOCK WEB
+
+## Status
+Currently in alpha
 
 ## Requirements
 * `Flask`: `0.11.1`
