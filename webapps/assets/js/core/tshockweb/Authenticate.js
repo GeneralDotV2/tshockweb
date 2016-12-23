@@ -10,13 +10,14 @@
 		});
 
 	};
+    var base_url = window.location.protocol + "//" + window.location.host + "/";
 
     // authenticate if token is present and is valid
     if (Cookies.get('tshockweb') != undefined) {
         var tshock = JSON.parse(Cookies.get('tshockweb'));
         $.ajax({
             type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/validation",
+            url: base_url + "api/validation",
             data: JSON.stringify({token: tshock.token}),
             dataType: 'json',
             contentType: "application/json",
@@ -25,15 +26,17 @@
                     // redirect to login
                     console.log("Existing token is invalid, redirecting to login!");
                     Cookies.remove('tshockweb');
-                    window.location.replace(window.location.protocol + "//" + window.location.host + "/" + "webapps/html/pages/login.html");
+                    window.location.replace(base_url + "webapps/html/pages/login.html");
                 } else {
                     console.log("Token in cookie is valid, continue my lord and savior");
+                    $('#tshockweb_profileinfo').html(tshock.username);
+                    $("#tshockweb_profile").attr("href", base_url + "webapps/html/pages/profile.html?username="+tshock.username)
                 }
             }
         });
     } else {
         console.log("No cookie available, redirecting to login!");
-        window.location.replace(window.location.protocol + "//" + window.location.host + "/" + "webapps/html/pages/login.html");
+        window.location.replace(base_url + "webapps/html/pages/login.html");
     }
 
     // triggers logout
@@ -41,7 +44,7 @@
         var tshock = JSON.parse(Cookies.get('tshockweb'));
         $.ajax({
             type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/logout",
+            url: base_url + "api/logout",
             data: JSON.stringify({ token: tshock.token}),
             dataType: 'json',
             contentType: "application/json",
@@ -49,7 +52,7 @@
                 if (data.status == 200) {
                     console.log("Success: " + data.result);
                     Cookies.remove('tshockweb');
-                    window.location.replace(window.location.protocol + "//" + window.location.host + "/" + "webapps/html/pages/login.html");
+                    window.location.replace(base_url + "webapps/html/pages/login.html");
                 } else {
                     alert("Logout failed: " + data.result);
                 }

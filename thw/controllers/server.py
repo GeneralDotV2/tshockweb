@@ -18,7 +18,7 @@ class ServerController(object):
         :return: dict
         """
 
-        return api.get(path="server/broadcast", params={'msg': message})
+        return api.get(path="server/broadcast", params={'msg': message})['response']
 
     @staticmethod
     def restart_server(api, message, save=True):
@@ -52,20 +52,6 @@ class ServerController(object):
         """
 
         return api.get(path="server/off", params={'msg': message, 'confirm': True, 'nosave': not save})
-
-    @staticmethod
-    def execute_cmd(api, command):
-        """
-        Execute a command on the server
-
-        :param api: tshock client api
-        :type api: TSHOCKClient
-        :param command: the command and arguments to execute
-        :type command: str
-        :return: dict
-        """
-
-        return api.get(path="server/rawcmd", params={'cmd': command}, version='v3')
 
     @staticmethod
     def reload_server_configs(api):

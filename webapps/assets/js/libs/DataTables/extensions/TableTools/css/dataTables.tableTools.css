@@ -135,7 +135,7 @@ a.DTTT_disabled {
 /*
  * BUTTON_STYLES
  * Action specific button styles
- * If you want images - comment this back in
+ * If you want player - comment this back in
 
 a.DTTT_button_csv,
 a.DTTT_button_xls,
@@ -157,20 +157,20 @@ a.DTTT_button_print span {
 }
 
 
-a.DTTT_button_csv span { background: url(../images/csv.png) no-repeat bottom right; }
-a.DTTT_button_csv:hover span { background: url(../images/csv_hover.png) no-repeat center right; }
+a.DTTT_button_csv span { background: url(../player/csv.png) no-repeat bottom right; }
+a.DTTT_button_csv:hover span { background: url(../player/csv_hover.png) no-repeat center right; }
 
-a.DTTT_button_xls span { background: url(../images/xls.png) no-repeat center right; }
-a.DTTT_button_xls:hover span { background: #f0f0f0 url(../images/xls_hover.png) no-repeat center right; }
+a.DTTT_button_xls span { background: url(../player/xls.png) no-repeat center right; }
+a.DTTT_button_xls:hover span { background: #f0f0f0 url(../player/xls_hover.png) no-repeat center right; }
 
-a.DTTT_button_copy span { background: url(../images/copy.png) no-repeat center right; }
-a.DTTT_button_copy:hover span { background: #f0f0f0 url(../images/copy_hover.png) no-repeat center right; }
+a.DTTT_button_copy span { background: url(../player/copy.png) no-repeat center right; }
+a.DTTT_button_copy:hover span { background: #f0f0f0 url(../player/copy_hover.png) no-repeat center right; }
 
-a.DTTT_button_pdf span { background: url(../images/pdf.png) no-repeat center right; }
-a.DTTT_button_pdf:hover span { background: #f0f0f0 url(../images/pdf_hover.png) no-repeat center right; }
+a.DTTT_button_pdf span { background: url(../player/pdf.png) no-repeat center right; }
+a.DTTT_button_pdf:hover span { background: #f0f0f0 url(../player/pdf_hover.png) no-repeat center right; }
 
-a.DTTT_button_print span { background: url(../images/print.png) no-repeat center right; }
-a.DTTT_button_print:hover span { background: #f0f0f0 url(../images/print_hover.png) no-repeat center right; }
+a.DTTT_button_print span { background: url(../player/print.png) no-repeat center right; }
+a.DTTT_button_print:hover span { background: #f0f0f0 url(../player/print_hover.png) no-repeat center right; }
 
  */
 

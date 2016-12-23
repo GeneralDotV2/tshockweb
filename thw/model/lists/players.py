@@ -57,3 +57,29 @@ class PlayerList(object):
         """
 
         return api.get(path="players/read", params={'player': username}, version='v3')
+
+    @staticmethod
+    def get_user_ip_in_world(api, username):
+        """
+        Get the IP address for a user who's playing ingame
+
+        :param api: tshock client api
+        :type api: TSHOCKClient
+        :param username: username of a existing user
+        :type username:
+        :return:
+        """
+
+        return PlayerList.get_user_in_world(api=api, username=username)['ip']
+
+    @staticmethod
+    def get_users_in_database(api):
+        """
+        Get users in database
+
+        :param api: tshock client api
+        :type api: TSHOCKClient
+        :return:
+        """
+
+        return api.get(path="users/list")['users']

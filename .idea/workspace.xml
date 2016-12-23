@@ -1,24 +1,782 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b17145f-609b-46c6-9061-35ff168a53c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/img1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/img3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/img4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/img5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/img6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/user_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie/js.cookie-2.1.3.min.js" />
+    <list default="true" id="1b17145f-609b-46c6-9061-35ff168a53c7" name="Default" comment="Improved API, GUI,">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thw/controllers/manager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/html/pages/commandboard.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/charts/charts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/forms/advanced.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/forms/basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/forms/data/countries.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/forms/editors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/forms/layouts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/forms/validation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/forms/wizard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/layouts/builder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/mail/compose.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/mail/inbox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/mail/message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/mail/reply.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/500.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/blank.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/blog/list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/blog/masonry.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/blog/post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/calendar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/contacts/add.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/contacts/details.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/contacts/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/invoice.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/locked.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/maps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/pricing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/search/results-text-image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/search/results-text.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/pages/timeline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/tables/data/users.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/tables/dynamic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/tables/responsive.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/tables/static.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/accordions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/cards.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/icons/fontawesome.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/icons/glyphicons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/icons/materialicons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/icons/skycons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/messages.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/offcanvas.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapps/html/ui/typography.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Archery.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Archery.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Battle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Battle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Bleeding.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Bleeding.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Broken_Armor.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Broken_Armor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Clairvoyance.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Clairvoyance.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Confused.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Confused.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Cursed.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Cursed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Cursed_Inferno.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Cursed_Inferno.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Darkness.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Darkness.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Fairy.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Fairy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Featherfall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Featherfall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Gills.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Gills.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Gravitation.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Gravitation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Horrified.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Horrified.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Hunter.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Hunter.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Invisibility.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Invisibility.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Ironskin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Ironskin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Magic_Power.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Magic_Power.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Mana_Regeneration.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Mana_Regeneration.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Merfolk.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Merfolk.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Night_Owl.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Night_Owl.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/None.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/None.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Obsidian_Skin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Obsidian_Skin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/On_Fire!.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/On_Fire!.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Orb_of_Light.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Orb_of_Light.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Pet_Bunny.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Pet_Bunny.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Poisoned.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Poisoned.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Potion_Sickness.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Potion_Sickness.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Regeneration.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Regeneration.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Shine.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Shine.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Silenced.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Silenced.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Slow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Slow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Spelunker.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Spelunker.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Swiftness.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Swiftness.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/The_Tongue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/The_Tongue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Thorns.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Thorns.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Tipsy.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Tipsy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Water_Walking.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Water_Walking.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Weak.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Weak.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Well_Fed.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Well_Fed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/Werewolf.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/Werewolf.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/buffs/buffid.txt" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/buffs/buffid.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/1_Second_Timer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/1_Second_Timer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/3_Second_Timer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/3_Second_Timer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/5_Second_Timer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/5_Second_Timer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Acorn.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Acorn.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Active_Stone_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Active_Stone_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Breastplate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Breastplate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Chainsaw.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Chainsaw.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Drill.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Drill.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Forge.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Forge.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Glaive.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Glaive.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Headgear.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Headgear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Leggings.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Leggings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Mask.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Mask.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Repeater.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Repeater.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Adamantite_Sword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Adamantite_Sword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Aglet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Aglet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ale.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ale.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Amethyst.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Amethyst.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Angel_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Angel_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Angel_Wings.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Angel_Wings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Anklet_of_the_Wind.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Anklet_of_the_Wind.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Antlion_Mandible.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Antlion_Mandible.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Anvil_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Anvil_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Aqua_Scepter.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Aqua_Scepter.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Archaeologist's_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Archaeologist's_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Archaeologist's_Jacket.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Archaeologist's_Jacket.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Archaeologist's_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Archaeologist's_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Archery_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Archery_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Armor_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Armor_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ash_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ash_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Axe_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Axe_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Baby_Slime.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Baby_Slime.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ball_'O_Hurt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ball_'O_Hurt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Band_of_Regeneration.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Band_of_Regeneration.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Band_of_Starpower.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Band_of_Starpower.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Barrel.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Barrel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bat_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bat_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bathtub.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bathtub.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Battle_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Battle_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bed.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bell.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bell.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bench.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bench.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bird_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bird_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Black_Dye.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Black_Dye.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Black_Lens.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Black_Lens.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blade_of_Grass.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blade_of_Grass.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blinkroot.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blinkroot.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blinkroot_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blinkroot_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blowpipe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blowpipe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Banner.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Banner.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Light.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Light.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Moon.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Moon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Phaseblade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Phaseblade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Phasesaber.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Phasesaber.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Present.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Present.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Blue_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Blue_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bomb.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bomb.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bomb_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bomb_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bone.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Book.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Book.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bookcase.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bookcase.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Boomerang_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Boomerang_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Boot_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Boot_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bottle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bottle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bottled_Water.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bottled_Water.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Boulder.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Boulder.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bow_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bow_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bowl.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bowl.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bowl_of_Soup.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bowl_of_Soup.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Breaker_Blade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Breaker_Blade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Breathing_Reed.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Breathing_Reed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Brown_Pressure_Plate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Brown_Pressure_Plate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bunny_Hood.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bunny_Hood.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Bunny_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Bunny_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Burning_Sphere.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Burning_Sphere.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cactus.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cactus.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Candelabra.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Candelabra.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Candle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Candle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Candy_Cane_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Candy_Cane_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Candy_Cane_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Candy_Cane_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Carrot.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Carrot.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Chain_Lantern.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Chain_Lantern.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Chest.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Chest.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Chest_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Chest_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Chinese_Lantern.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Chinese_Lantern.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Clay_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Clay_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Clay_Pot.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Clay_Pot.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Clockwork_Assault_Rifle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Clockwork_Assault_Rifle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cloud_in_a_Balloon.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cloud_in_a_Balloon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cloud_in_a_Bottle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cloud_in_a_Bottle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Clown_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Clown_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Clown_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Clown_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Clown_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Clown_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Breastplate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Breastplate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Chainsaw.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Chainsaw.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Drill.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Drill.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Leggings.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Leggings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Mask.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Mask.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Naginata.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Naginata.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Repeater.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Repeater.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Shield.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Shield.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobalt_Sword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobalt_Sword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cobweb.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cobweb.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Compass.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Compass.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cooking_Pot.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cooking_Pot.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Axe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Axe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Bow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Bow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Broadsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Broadsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Chainmail.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Chainmail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Chandelier.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Chandelier.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Coin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Coin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Hammer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Hammer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Pickaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Pickaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Shortsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Shortsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Copper_Watch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Copper_Watch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Coral.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Coral.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Corrupt_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Corrupt_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Corrupt_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Corrupt_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Crab_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Crab_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cross_Necklace.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cross_Necklace.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cross_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cross_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Crystal_Ball.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Crystal_Ball.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Crystal_Bullet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Crystal_Bullet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Crystal_Heart.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Crystal_Heart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Crystal_Shard.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Crystal_Shard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Crystal_Storm.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Crystal_Storm.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cursed_Arrow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cursed_Arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cursed_Bullet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cursed_Bullet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cursed_Flame.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cursed_Flame.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cursed_Flames.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cursed_Flames.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Cursed_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Cursed_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dao_of_Pow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dao_of_Pow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dark_Lance.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dark_Lance.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dark_Shard.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dark_Shard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dart_Trap.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dart_Trap.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Daybloom.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Daybloom.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Daybloom_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Daybloom_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Deathweed.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Deathweed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Deathweed_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Deathweed_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Demon_Bow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Demon_Bow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Demon_Scythe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Demon_Scythe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Demon_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Demon_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Demon_Wings.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Demon_Wings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Demonite_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Demonite_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Demonite_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Demonite_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Demonite_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Demonite_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Depth_Meter.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Depth_Meter.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Diamond.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Diamond.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dirt_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dirt_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dirt_Rod.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dirt_Rod.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dirt_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dirt_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Disco_Ball.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Disco_Ball.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Diving_Gear.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Diving_Gear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Diving_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Diving_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dresser.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dresser.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dual_Hook.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dual_Hook.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Dynamite.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Dynamite.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ebonsand_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ebonsand_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ebonstone_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ebonstone_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Emerald.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Emerald.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Empty_Bucket.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Empty_Bucket.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Enchanted_Boomerang.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Enchanted_Boomerang.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Excalibur.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Excalibur.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Explosives.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Explosives.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Eyeball_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Eyeball_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Fairy_Bell.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Fairy_Bell.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Fallen_Star.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Fallen_Star.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Familiar_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Familiar_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Familiar_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Familiar_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Familiar_Wig.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Familiar_Wig.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Feather.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Feather.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Featherfall_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Featherfall_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Feral_Claws.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Feral_Claws.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Fiery_Greatsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Fiery_Greatsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Fireblossom.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Fireblossom.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Fireblossom_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Fireblossom_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Fish_Bowl.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Fish_Bowl.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Fish_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Fish_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Flamarang.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Flamarang.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Flamelash.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Flamelash.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Flamethrower.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Flamethrower.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Flaming_Arrow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Flaming_Arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Flintlock_Pistol.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Flintlock_Pistol.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Flipper.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Flipper.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Flower_of_Fire.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Flower_of_Fire.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Furnace.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Furnace.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/GPS.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/GPS.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gargoyle_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gargoyle_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gel.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gills_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gills_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Glass.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Glass.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Glass_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Glass_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gloom_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gloom_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Glowing_Mushroom.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Glowing_Mushroom.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Glowstick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Glowstick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Goblin_Battle_Standard.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Goblin_Battle_Standard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Goblin_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Goblin_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Goggles.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Goggles.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Axe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Axe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Bow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Bow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Broadsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Broadsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Chainmail.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Chainmail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Chandelier.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Chandelier.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Chest.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Chest.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Coin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Coin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Crown.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Crown.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Hammer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Hammer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Pickaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Pickaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Shortsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Shortsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gold_Watch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gold_Watch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Golden_Key.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Golden_Key.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Goldfish.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Goldfish.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Grandfather_Clock.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Grandfather_Clock.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Grappling_Hook.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Grappling_Hook.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Grass_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Grass_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gravitation_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gravitation_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gray_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gray_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gray_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gray_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gray_Pressure_Plate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gray_Pressure_Plate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Greater_Healing_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Greater_Healing_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Greater_Mana_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Greater_Mana_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Banner.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Banner.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Candy_Cane_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Candy_Cane_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Candy_Cane_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Candy_Cane_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Dye.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Dye.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Light.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Light.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Phaseblade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Phaseblade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Phasesaber.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Phasesaber.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Present.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Present.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Pressure_Plate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Pressure_Plate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Slime.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Slime.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Green_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Green_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Grenade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Grenade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Guide_Voodoo_Doll.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Guide_Voodoo_Doll.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Gungnir.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Gungnir.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hallowed_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hallowed_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hallowed_Headgear.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hallowed_Headgear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hallowed_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hallowed_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hallowed_Mask.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hallowed_Mask.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hallowed_Plate_Mail.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hallowed_Plate_Mail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hallowed_Repeater.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hallowed_Repeater.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hallowed_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hallowed_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hamdrax.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hamdrax.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hammer_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hammer_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Handgun.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Handgun.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Harp.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Harp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Harpoon.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Harpoon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Healing_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Healing_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Heart.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Heart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Heart_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Heart_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hellfire_Arrow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hellfire_Arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hellforge.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hellforge.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hellstone.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hellstone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hellstone_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hellstone_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hellstone_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hellstone_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hermes_Boots.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hermes_Boots.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hero's_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hero's_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hero's_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hero's_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hero's_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hero's_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Holy_Arrow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Holy_Arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Holy_Water.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Holy_Water.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hook.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hook.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hornet_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hornet_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Hunter_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Hunter_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ice_Rod.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ice_Rod.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Illegal_Gun_Parts.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Illegal_Gun_Parts.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Imp_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Imp_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Inactive_Stone_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Inactive_Stone_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Inlet_Pump.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Inlet_Pump.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Invisibility_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Invisibility_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iridescent_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iridescent_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iridescent_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iridescent_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Anvil.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Anvil.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Axe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Axe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Bow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Bow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Broadsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Broadsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Chain.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Chain.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Chainmail.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Chainmail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Hammer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Hammer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Pickaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Pickaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Iron_Shortsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Iron_Shortsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ironskin_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ironskin_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ivy_Whip.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ivy_Whip.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jellyfish_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jellyfish_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jester's_Arrow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jester's_Arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Bat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Bat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Grass_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Grass_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Rose.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Rose.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Spores.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Spores.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_Vines.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_Vines.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Jungle_grass.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Jungle_grass.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Keg.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Keg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/King_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/King_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lamp_Post.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lamp_Post.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Laser_Rifle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Laser_Rifle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lava_Bucket.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lava_Bucket.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Leather.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Leather.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lens.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lens.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lesser_Healing_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lesser_Healing_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lesser_Mana_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lesser_Mana_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lesser_Restoration_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lesser_Restoration_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lever.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lever.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Life_Crystal.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Life_Crystal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Light's_Bane.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Light's_Bane.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Light_Disc.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Light_Disc.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Light_Shard.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Light_Shard.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Loom.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Loom.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Lucky_Horseshoe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Lucky_Horseshoe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Magic_Dagger.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Magic_Dagger.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Magic_Mirror.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Magic_Mirror.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Magic_Missile.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Magic_Missile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Magic_Power_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Magic_Power_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Magical_Harp.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Magical_Harp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mana_Crystal.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mana_Crystal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mana_Flower.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mana_Flower.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mana_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mana_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mana_Regeneration_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mana_Regeneration_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mannequin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mannequin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mechanical_Eye.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mechanical_Eye.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mechanical_Skull.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mechanical_Skull.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mechanical_Worm.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mechanical_Worm.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Megashark.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Megashark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Meteor_Hamaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Meteor_Hamaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Meteor_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Meteor_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Meteor_Leggings.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Meteor_Leggings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Meteor_Shot.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Meteor_Shot.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Meteor_Suit.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Meteor_Suit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Meteorite.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Meteorite.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Meteorite_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Meteorite_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mime_Mask.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mime_Mask.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mining_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mining_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mining_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mining_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mining_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mining_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Minishark.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Minishark.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Molten_Breastplate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Molten_Breastplate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Molten_Fury.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Molten_Fury.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Molten_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Molten_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Molten_Hamaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Molten_Hamaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Molten_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Molten_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Molten_Pickaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Molten_Pickaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Moon_Charm.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Moon_Charm.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Moonglow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Moonglow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Moonglow_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Moonglow_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mud_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mud_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mudstone_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mudstone_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mudstone_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mudstone_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mug.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mug.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Muramasa.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Muramasa.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mushroom.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mushroom.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mushroom_Grass_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mushroom_Grass_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mushroom_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mushroom_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Boss_1).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Boss_1).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Boss_2).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Boss_2).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Boss_3).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Boss_3).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Corruption).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Corruption).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Eerie).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Eerie).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Jungle).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Jungle).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Night).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Night).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Overworld_Day).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Overworld_Day).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(The_Hallow).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(The_Hallow).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Title).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Title).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Underground).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Underground).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Underground_Corruption).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Underground_Corruption).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Music_Box_(Underground_Hallow).png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Music_Box_(Underground_Hallow).png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Musket.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Musket.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Musket_Ball.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Musket_Ball.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Anvil.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Anvil.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Chainmail.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Chainmail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Chainsaw.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Chainsaw.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Drill.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Drill.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Halberd.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Halberd.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Hood.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Hood.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Repeater.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Repeater.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Mythril_Sword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Mythril_Sword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Nature's_Gift.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Nature's_Gift.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Necro_Breastplate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Necro_Breastplate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Necro_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Necro_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Necro_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Necro_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Neptune's_Shell.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Neptune's_Shell.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Night's_Edge.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Night's_Edge.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Night_Owl_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Night_Owl_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Nightmare_Pickaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Nightmare_Pickaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ninja_Hood.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ninja_Hood.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ninja_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ninja_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ninja_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ninja_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Obsidian.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Obsidian.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Obsidian_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Obsidian_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Obsidian_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Obsidian_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Obsidian_Horseshoe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Obsidian_Horseshoe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Obsidian_Shield.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Obsidian_Shield.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Obsidian_Skin_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Obsidian_Skin_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Obsidian_Skull.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Obsidian_Skull.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Orb_of_Light.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Orb_of_Light.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Outlet_Pump.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Outlet_Pump.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pearlsand_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pearlsand_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pearlstone_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pearlstone_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pearlstone_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pearlstone_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pearlstone_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pearlstone_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Philosopher's_Stone.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Philosopher's_Stone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Phoenix_Blaster.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Phoenix_Blaster.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Piano.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Piano.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pickaxe_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pickaxe_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Piggy_Bank.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Piggy_Bank.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pillar_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pillar_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pink_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pink_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pink_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pink_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pink_Vase.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pink_Vase.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pinky.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pinky.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Piranha.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Piranha.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Piranha_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Piranha_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pixie_Dust.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pixie_Dust.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Planked_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Planked_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Platinum_Coin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Platinum_Coin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Plumber's_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Plumber's_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Plumber's_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Plumber's_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Plumber's_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Plumber's_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Poisoned_Knife.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Poisoned_Knife.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pot.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pot.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pot_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pot_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Potion_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Potion_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Purification_Powder.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Purification_Powder.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Purple_Phaseblade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Purple_Phaseblade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Purple_Phasesaber.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Purple_Phasesaber.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Purple_Slime.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Purple_Slime.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Purple_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Purple_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Pwnhammer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Pwnhammer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Queen_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Queen_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Rainbow_Rod.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Rainbow_Rod.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ranger_Emblem.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ranger_Emblem.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Reaper_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Reaper_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Banner.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Banner.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Light.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Light.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Phaseblade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Phaseblade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Phasesaber.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Phasesaber.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Pressure_Plate.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Pressure_Plate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Red_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Red_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Regeneration_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Regeneration_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Restoration_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Restoration_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Robe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Robe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Robot_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Robot_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Rocket_Boots.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Rocket_Boots.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Rotten_Chunk.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Rotten_Chunk.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ruby.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ruby.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Ruler.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Ruler.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Safe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Safe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sand_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sand_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sandgun.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sandgun.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Santa_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Santa_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Santa_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Santa_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Santa_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Santa_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sapphire.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sapphire.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sawmill.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sawmill.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Seed.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Seed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shackle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shackle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shadow_Chest.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shadow_Chest.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shadow_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shadow_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shadow_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shadow_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shadow_Key.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shadow_Key.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shadow_Orb.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shadow_Orb.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shadow_Scale.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shadow_Scale.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shadow_Scalemail.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shadow_Scalemail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shark_Fin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shark_Fin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shield_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shield_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shine_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shine_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shiny_Red_Balloon.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shiny_Red_Balloon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shotgun.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shotgun.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Shuriken.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Shuriken.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sign.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sign.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silk.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silk.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silt_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silt_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Axe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Axe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Bar.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Bar.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Bow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Bow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Broadsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Broadsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Bullet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Bullet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Chainmail.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Chainmail.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Chandelier.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Chandelier.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Coin.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Coin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Greaves.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Greaves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Hammer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Hammer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Helmet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Helmet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Ore.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Ore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Pickaxe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Pickaxe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Shortsword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Shortsword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Silver_Watch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Silver_Watch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Skeleton_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Skeleton_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Skull_Lantern.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Skull_Lantern.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Slime_Crown.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Slime_Crown.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Slime_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Slime_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Snow_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Snow_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Snow_Brick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Snow_Brick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Snow_Brick_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Snow_Brick_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Snow_Globe.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Snow_Globe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sorcerer_Emblem.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sorcerer_Emblem.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Soul_of_Flight.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Soul_of_Flight.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Soul_of_Fright.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Soul_of_Fright.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Soul_of_Light.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Soul_of_Light.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Soul_of_Might.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Soul_of_Might.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Soul_of_Night.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Soul_of_Night.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Soul_of_Sight.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Soul_of_Sight.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Space_Gun.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Space_Gun.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Spear.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Spear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Spear_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Spear_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Spectre_Boots.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Spectre_Boots.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Spell_Tome.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Spell_Tome.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Spelunker_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Spelunker_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Spike.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Spike.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Spiky_Ball.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Spiky_Ball.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Staff_of_Regrowth.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Staff_of_Regrowth.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Star.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Star.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Star_Cannon.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Star_Cannon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Star_Cloak.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Star_Cloak.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Star_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Star_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Starfury.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Starfury.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sticky_Bomb.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sticky_Bomb.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sticky_Glowstick.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sticky_Glowstick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Stinger.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Stinger.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Stone_Block.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Stone_Block.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Stone_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Stone_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Summer_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Summer_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sunflower.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sunflower.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sunflower_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sunflower_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sunfury.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sunfury.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sunglasses.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sunglasses.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Suspicious_Looking_Eye.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Suspicious_Looking_Eye.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Swiftness_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Swiftness_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Switch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Switch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Sword_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Sword_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Tattered_Cloth.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Tattered_Cloth.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/The_Breaker.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/The_Breaker.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/The_Doctor's_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/The_Doctor's_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/The_Doctor's_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/The_Doctor's_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Thorn_Chakram.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Thorn_Chakram.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Thorns_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Thorns_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Throne.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Throne.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Throwing_Knife.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Throwing_Knife.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Tiki_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Tiki_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Tinkerer's_Workshop.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Tinkerer's_Workshop.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Titan_Glove.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Titan_Glove.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Toilet.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Toilet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Tombstone.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Tombstone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Toolbelt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Toolbelt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Top_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Top_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Topaz.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Topaz.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Trash_Can.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Trash_Can.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Tree_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Tree_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Trident.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Trident.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Tuxedo_Pants.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Tuxedo_Pants.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Tuxedo_Shirt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Tuxedo_Shirt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Unholy_Arrow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Unholy_Arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Unholy_Water.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Unholy_Water.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Unicorn_Horn.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Unicorn_Horn.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Vile_Mushroom.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Vile_Mushroom.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Vile_Powder.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Vile_Powder.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Vile_Spit.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Vile_Spit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Vilethorn.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Vilethorn.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Vine.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Vine.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/War_Axe_of_the_Night.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/War_Axe_of_the_Night.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Warrior_Emblem.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Warrior_Emblem.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Water_Bolt.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Water_Bolt.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Water_Bucket.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Water_Bucket.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Water_Candle.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Water_Candle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Water_Walking_Potion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Water_Walking_Potion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Waterleaf.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Waterleaf.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Waterleaf_Seeds.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Waterleaf_Seeds.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/White_Phaseblade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/White_Phaseblade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/White_Phasesaber.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/White_Phasesaber.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/White_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/White_Torch.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Whoopie_Cushion.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Whoopie_Cushion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wire.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wire.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wire_Cutter.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wire_Cutter.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wizard_Hat.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wizard_Hat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Woman_Statue.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Woman_Statue.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wood.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wood.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wood_Platform.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wood_Platform.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wood_Wall.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wood_Wall.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Arrow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Beam.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Beam.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Boomerang.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Boomerang.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Bow.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Bow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Chair.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Chair.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Door.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Door.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Hammer.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Hammer.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Sword.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Sword.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wooden_Table.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wooden_Table.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Work_Bench.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Work_Bench.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Worm_Food.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Worm_Food.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Worm_Tooth.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Worm_Tooth.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Wrench.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Wrench.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Yellow_Banner.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Yellow_Banner.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Yellow_Phaseblade.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Yellow_Phaseblade.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Yellow_Phasesaber.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Yellow_Phasesaber.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Yellow_Present.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Yellow_Present.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/webapps/images/items/Yellow_Torch.png" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/player/items/Yellow_Torch.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/thw_web_api_test.py" afterPath="$PROJECT_DIR$/tests/thw_web_api_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thw/controllers/server.py" afterPath="$PROJECT_DIR$/thw/controllers/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tshockweb.py" afterPath="$PROJECT_DIR$/tshockweb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thw/helpers/api.py" afterPath="$PROJECT_DIR$/thw/helpers/api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thw/helpers/decorators.py" afterPath="$PROJECT_DIR$/thw/helpers/decorators.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thw/model/lists/players.py" afterPath="$PROJECT_DIR$/thw/model/lists/players.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-1/libs/jquery-ui/jquery-ui-boostbox.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-1/libs/jquery-ui/jquery-ui-boostbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-1/libs/jquery-ui/jquery-ui-planar.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-1/libs/jquery-ui/jquery-ui-planar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-1/libs/jquery-ui/jquery-ui-theme.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-1/libs/jquery-ui/jquery-ui-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-2/libs/jquery-ui/jquery-ui-boostbox.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-2/libs/jquery-ui/jquery-ui-boostbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-2/libs/jquery-ui/jquery-ui-planar.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-2/libs/jquery-ui/jquery-ui-planar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-2/libs/jquery-ui/jquery-ui-theme.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-2/libs/jquery-ui/jquery-ui-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-3/libs/jquery-ui/jquery-ui-boostbox.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-3/libs/jquery-ui/jquery-ui-boostbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-3/libs/jquery-ui/jquery-ui-planar.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-3/libs/jquery-ui/jquery-ui-planar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-3/libs/jquery-ui/jquery-ui-theme.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-3/libs/jquery-ui/jquery-ui-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-4/libs/jquery-ui/jquery-ui-boostbox.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-4/libs/jquery-ui/jquery-ui-boostbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-4/libs/jquery-ui/jquery-ui-planar.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-4/libs/jquery-ui/jquery-ui-planar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-4/libs/jquery-ui/jquery-ui-theme.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-4/libs/jquery-ui/jquery-ui-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-5/libs/jquery-ui/jquery-ui-boostbox.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-5/libs/jquery-ui/jquery-ui-boostbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-5/libs/jquery-ui/jquery-ui-planar.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-5/libs/jquery-ui/jquery-ui-planar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-5/libs/jquery-ui/jquery-ui-theme.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-5/libs/jquery-ui/jquery-ui-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-default/libs/jquery-ui/jquery-ui-planar.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-default/libs/jquery-ui/jquery-ui-planar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-default/libs/jquery-ui/jquery-ui-theme.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-default/libs/jquery-ui/jquery-ui-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoDashboard.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoDashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoTableDynamic.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoTableDynamic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/libs/DataTables/extensions/TableTools/css/dataTables.tableTools.css" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/DataTables/extensions/TableTools/css/dataTables.tableTools.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/libs/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/ckeditor/ckeditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/libs/ckeditor/plugins/image/dialogs/image.js" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/ckeditor/plugins/image/dialogs/image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/libs/ckeditor/samples/plugins/htmlwriter/outputforflash.html" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/ckeditor/samples/plugins/htmlwriter/outputforflash.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/libs/jquery-validation/demo/marketo/stylesheet.css" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/jquery-validation/demo/marketo/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/libs/jquery-validation/demo/multipart/style.css" afterPath="$PROJECT_DIR$/webapps/assets/js/libs/jquery-validation/demo/multipart/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/less/bootstrap/carousel.less" afterPath="$PROJECT_DIR$/webapps/assets/less/bootstrap/carousel.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/less/bootstrap/scaffolding.less" afterPath="$PROJECT_DIR$/webapps/assets/less/bootstrap/scaffolding.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/less/libs/jquery-ui/jquery-ui.less" afterPath="$PROJECT_DIR$/webapps/assets/less/libs/jquery-ui/jquery-ui.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/html/dashboards/dashboard.html" afterPath="$PROJECT_DIR$/webapps/html/dashboards/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/html/pages/login.html" afterPath="$PROJECT_DIR$/webapps/html/pages/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/html/pages/profile.html" afterPath="$PROJECT_DIR$/webapps/html/pages/profile.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,7 +788,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tshockweb$api_test.coverage" NAME="api_test Coverage Results" MODIFIED="1481914487978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/tshockweb$thw_web_api_test.coverage" NAME="thw_web_api_test Coverage Results" MODIFIED="1481982703427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/tshockweb$thw_web_api_test__1_.coverage" NAME="thw_web_api_test (1) Coverage Results" MODIFIED="1482366899222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/tshockweb$thw_web_api_test__1_.coverage" NAME="thw_web_api_test (1) Coverage Results" MODIFIED="1482457111996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/tshockweb$tshockweb.coverage" NAME="tshockweb Coverage Results" MODIFIED="1482233287305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -39,12 +797,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Web.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js">
+      <file leaf-file-name="commandboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/html/pages/commandboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="42" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="368">
+              <caret line="178" column="75" lean-forward="false" selection-start-line="178" selection-start-column="75" selection-end-line="178" selection-end-column="75" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,8 +812,8 @@
       <file leaf-file-name="Authenticate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="18">
+              <caret line="31" column="70" lean-forward="true" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -69,14 +829,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/html/pages/login.html">
+      <file leaf-file-name="Commandboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="540">
+              <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,20 +842,22 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/html/dashboards/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="129" column="84" lean-forward="false" selection-start-line="129" selection-start-column="68" selection-end-line="129" selection-end-column="84" />
+            <state relative-caret-position="106">
+              <caret line="54" column="100" lean-forward="false" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="100" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/assets/css/theme-default/bootstrap.css">
+      <file leaf-file-name="DemoDashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/demo/DemoDashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="1697" column="1" lean-forward="false" selection-start-line="1697" selection-start-column="1" selection-end-line="1697" selection-end-column="1" />
+            <state relative-caret-position="-2373">
+              <caret line="65" column="6" lean-forward="true" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -106,20 +866,8 @@
       <file leaf-file-name="tshockweb.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tshockweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="103" column="45" lean-forward="true" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thw/controllers/server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="93" column="88" lean-forward="true" selection-start-line="93" selection-start-column="88" selection-end-line="93" selection-end-column="88" />
+            <state relative-caret-position="324">
+              <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,19 +876,32 @@
       <file leaf-file-name="thw_web_api_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/thw_web_api_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="8" column="109" lean-forward="false" selection-start-line="8" selection-start-column="109" selection-end-line="8" selection-end-column="109" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie/LICENSE">
+      <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="70" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+            <state relative-caret-position="398">
+              <caret line="133" column="35" lean-forward="true" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="468">
+                <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -156,18 +917,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>old_api</find>
-      <find>get_user</find>
-      <find>['web']</find>
-      <find>401</find>
-      <find>update_group</find>
-      <find>img-backdrop</find>
       <find>../../assets/img/avatar1.jpg?1403934956</find>
       <find>MATERIAL ADMIN</find>
       <find>headerSearch</find>
       <find>validate</find>
       <find>validation</find>
       <find>../pages/login.html</find>
+      <find>54 sec.</find>
+      <find>Amount of</find>
+      <find>Jim</find>
+      <find>height</find>
+      <find>Email</find>
+      <find>main-</find>
+      <find>Config</find>
+      <find>Done setting username &amp; group</find>
+      <find>tshockweb_profileinfo</find>
+      <find>username</find>
+      <find>raw</find>
+      <find>Registered users</find>
+      <find>api/logout</find>
+      <find>Amount of people on the server</find>
+      <find>alert alert-callout alert-info no-margin</find>
+      <find>.sparkline-revenue</find>
+      <find>print</find>
+      <find>Online users</find>
+      <find>Uptime of TShock Terraria server</find>
+      <find>Server Activity</find>
+      <find>.sparkline-visits</find>
+      <find>btn btn-floating-action btn-default-bright</find>
+      <find>btn btn-icon-toggle btn-default</find>
+      <find>tshockweb_amount</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,27 +964,33 @@
         <option value="$PROJECT_DIR$/thw/model/lists/world.py" />
         <option value="$PROJECT_DIR$/thw/controllers/groups.py" />
         <option value="$PROJECT_DIR$/thw/model/lists/server.py" />
-        <option value="$PROJECT_DIR$/thw/controllers/world.py" />
         <option value="$PROJECT_DIR$/thw/helpers/permission.py" />
         <option value="$PROJECT_DIR$/thw/model/lists/groups.py" />
         <option value="$PROJECT_DIR$/thw/controllers/players.py" />
-        <option value="$PROJECT_DIR$/thw/model/lists/players.py" />
         <option value="$PROJECT_DIR$/tests/api_test.py" />
-        <option value="$PROJECT_DIR$/thw/helpers/api.py" />
         <option value="$PROJECT_DIR$/thw/helpers/network.py" />
         <option value="$PROJECT_DIR$/thw/helpers/system.py" />
         <option value="$PROJECT_DIR$/tests/thw_python_api_test.py" />
-        <option value="$PROJECT_DIR$/thw/helpers/decorators.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie/LICENSE" />
-        <option value="$PROJECT_DIR$/webapps/html/pages/login.html" />
         <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js" />
-        <option value="$PROJECT_DIR$/thw/controllers/server.py" />
-        <option value="$PROJECT_DIR$/tests/thw_web_api_test.py" />
-        <option value="$PROJECT_DIR$/tshockweb.py" />
-        <option value="$PROJECT_DIR$/webapps/html/dashboards/dashboard.html" />
+        <option value="$PROJECT_DIR$/webapps/html/pages/search/results-text.html" />
+        <option value="$PROJECT_DIR$/webapps/html/pages/login.html" />
         <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js" />
+        <option value="$PROJECT_DIR$/thw/model/lists/players.py" />
+        <option value="$PROJECT_DIR$/thw/helpers/decorators.py" />
+        <option value="$PROJECT_DIR$/webapps/html/pages/commandboard.html" />
+        <option value="$PROJECT_DIR$/thw/helpers/api.py" />
+        <option value="$PROJECT_DIR$/thw/controllers/server.py" />
+        <option value="$PROJECT_DIR$/thw/controllers/world.py" />
+        <option value="$PROJECT_DIR$/thw/controllers/manager.py" />
+        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js" />
+        <option value="$PROJECT_DIR$/tshockweb.py" />
+        <option value="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoDashboard.js" />
+        <option value="$PROJECT_DIR$/webapps/html/dashboards/dashboard.html" />
+        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/config/tshockweb.json" />
+        <option value="$PROJECT_DIR$/tests/thw_web_api_test.py" />
       </list>
     </option>
   </component>
@@ -239,6 +1024,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,38 +1034,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,28 +1077,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="dashboards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -362,6 +1094,20 @@
               <option name="myItemId" value="webapps" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tshockweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tshockweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -463,33 +1209,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="terraria" />
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -504,6 +1232,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="thw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tshockweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tshockweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tshockweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tshockweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lists" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,7 +1341,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,19 +1349,19 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webapps/assets/img/terraria" />
-      <recent name="$PROJECT_DIR$/webapps/assets/js/core/tshockweb" />
-      <recent name="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie" />
-      <recent name="$PROJECT_DIR$/thw/helpers" />
-      <recent name="$PROJECT_DIR$/tests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/webapps/assets/img/terraria" />
+      <recent name="$PROJECT_DIR$/webapps/html/pages" />
       <recent name="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie" />
       <recent name="$PROJECT_DIR$/webapps" />
       <recent name="$PROJECT_DIR$/webapps/materialadmin" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/thw" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/thw/controllers" />
+      <recent name="$PROJECT_DIR$/webapps/assets/js/core/tshockweb" />
+      <recent name="$PROJECT_DIR$/webapps/html/pages" />
+      <recent name="$PROJECT_DIR$/webapps/assets/img/terraria" />
+      <recent name="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie" />
     </key>
   </component>
   <component name="RunManager" selected="Python.thw_web_api_test (1)">
@@ -971,10 +1738,17 @@
       <option name="project" value="LOCAL" />
       <updated>1482279287912</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="api: add logout to api, destroy token; GUI: login page works, logout works">
+      <created>1482367328804</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1482367328804</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -987,16 +1761,17 @@
     <frame x="-1" y="0" width="1922" height="1041" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26357827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884398" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32211" sideWeight="0.53194886" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4074074" sideWeight="0.48509052" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772166" sideWeight="0.47231096" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22895622" sideWeight="0.4680511" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2662407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28058362" sideWeight="0.4680511" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1004,7 +1779,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1027,39 +1801,14 @@
     <MESSAGE value="Improve self documenting REST API, improve git docs and add ConnectionError catch if wrong tshock server is provided" />
     <MESSAGE value="Improve README" />
     <MESSAGE value="improve api requests to posts, improve tests and add first client side js script to login" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve api requests to posts, improve tests and add first client side js script to login" />
+    <MESSAGE value="api: add logout to api, destroy token; GUI: login page works, logout works" />
+    <option name="LAST_COMMIT_MESSAGE" value="api: add logout to api, destroy token; GUI: login page works, logout works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/objects.py" />
-    <entry file="file://$PROJECT_DIR$/extensions.py" />
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html" />
-    <entry file="file://$PROJECT_DIR$/thw/helpers/config.py" />
-    <entry file="file://$PROJECT_DIR$/thw/controllers/world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/model/lists/world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/000-default.conf" />
     <entry file="file://$PROJECT_DIR$/webapps/assets/less/libs/morris/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1082,35 +1831,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thw/controllers/players.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/model/lists/players.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thw/helpers/network.py" />
-    <entry file="file://$PROJECT_DIR$/thw/model/lists/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/helpers/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1746">
-          <caret line="98" column="65" lean-forward="false" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thw/helpers/system.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -1122,20 +1843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
           <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/thw_python_api_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="11" column="103" lean-forward="false" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/api_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1160,13 +1867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/source/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/demo/Demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1178,28 +1878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/helpers/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="52" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="918">
-            <caret line="51" column="117" lean-forward="false" selection-start-line="51" selection-start-column="117" selection-end-line="51" selection-end-column="117" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1242,7 +1920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,15 +1946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="70" lean-forward="false" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/controllers/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="93" column="88" lean-forward="true" selection-start-line="93" selection-start-column="88" selection-end-line="93" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1289,49 +1957,205 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tshockweb.py">
+    <entry file="file://$PROJECT_DIR$/webapps/html/forms/data/countries.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="103" column="45" lean-forward="true" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/players.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/source/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2268">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="324">
+          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/html/pages/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapps/html/pages/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+        <state relative-caret-position="1584">
+          <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/thw_python_api_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/model/lists/players.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/model/lists/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/helpers/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/api_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/helpers/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="130" column="89" lean-forward="false" selection-start-line="130" selection-start-column="89" selection-end-line="130" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="53" column="103" lean-forward="false" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tshockweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/demo/DemoDashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2373">
+          <caret line="65" column="6" lean-forward="true" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="31" column="70" lean-forward="true" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/html/pages/commandboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="178" column="75" lean-forward="false" selection-start-line="178" selection-start-column="75" selection-end-line="178" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapps/html/dashboards/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="129" column="84" lean-forward="false" selection-start-line="129" selection-start-column="68" selection-end-line="129" selection-end-column="84" />
+        <state relative-caret-position="106">
+          <caret line="54" column="100" lean-forward="false" selection-start-line="54" selection-start-column="75" selection-end-line="54" selection-end-column="100" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js">
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="398">
+          <caret line="133" column="35" lean-forward="true" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="52" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="468">
+            <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1345,8 +2169,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/thw_web_api_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="8" column="109" lean-forward="false" selection-start-line="8" selection-start-column="109" selection-end-line="8" selection-end-column="109" />
           <folding />
         </state>
       </provider>

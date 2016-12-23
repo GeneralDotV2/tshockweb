@@ -128,9 +128,7 @@ class TSHOCKClient(object):
             formated_params = ""
             for k, v in params.iteritems():
                 formated_params += k+"="+str(v)+"&"
-            print "{0}&{1}".format(request, formated_params[:-1])
             raw_response = function("{0}&{1}".format(request, formated_params[:-1])).text
-            print raw_response
 
         try:
             response = self._process(raw_response=raw_response)

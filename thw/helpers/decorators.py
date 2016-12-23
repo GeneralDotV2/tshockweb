@@ -19,7 +19,7 @@ def pack(func):
             return jsonify({'status': result[1], 'result': result[0], 'valid': True})
         except HttpException as ex:
             return jsonify({'status': 403, 'result': ex.message, 'valid': False})
-        except RuntimeError as ex:
+        except (RuntimeError, AttributeError) as ex:
             return jsonify({'status': 403, 'result': ex.message, 'valid': True})
         except ConnectionError:
             return jsonify({'status': 500, 'result': 'Connection errors to TSHOCK server, '

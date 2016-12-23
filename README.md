@@ -13,7 +13,19 @@ This is the new, improved & lightweight version of the TSHOCK WEB
 * The `tshock_web` section contains the `api` and `web` settings
 * The `tshock_server` section contains the settings to the tshock terraria server
 * Execute as: `python tshockweb.py`
-* Visit the following pages to validate the workability: `http://127.0.0.1:14789/api` & `http://127.0.0.1:14789`
+* Visit the following pages to validate the workability: `http://127.0.0.1:14789` & `http://127.0.0.1:14789/api`
+
+## GUI
+
+* Easily manage your tshockweb with account(s) that have `superadmin` rights
+![](http://i.imgur.com/PiXO1kj.png)
+
+* Easily monitor your tshock terraria server with the dashboard
+![](http://i.imgur.com/5gWbJZF.png)
+
+* Easily manage your raw tshock commands with an online command tool
+![](http://i.imgur.com/KvoGAdC.jpg)
+
 
 ## Development
 * Easy python API:

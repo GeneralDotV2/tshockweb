@@ -124,7 +124,7 @@
 				'</tr>' +
 				'<tr>' +
 				'<td>Extra info:</td>' +
-				'<td>And any further details here (images etc)...</td>' +
+				'<td>And any further details here (player etc)...</td>' +
 				'</tr>' +
 				'</table>';
 	};

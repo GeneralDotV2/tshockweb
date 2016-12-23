@@ -642,7 +642,7 @@ div.empty div.callout-green {
 
 .nav-left {
 	padding-top: 12px;
-	/*background: url(images/logo_marketo_square.gif) 0 0 no-repeat;*/
+	/*background: url(player/logo_marketo_square.gif) 0 0 no-repeat;*/
 	width: 210px;
 }
 
@@ -694,7 +694,7 @@ div.empty div.nav-left-header-tab {
 }
 
 .nav-left a.active {
-	/* background: url(images/arrow_d-green.gif) 5px 10px no-repeat; */
+	/* background: url(player/arrow_d-green.gif) 5px 10px no-repeat; */
 	display: block;
 	height: 24px;
 	text-decoration: none;
