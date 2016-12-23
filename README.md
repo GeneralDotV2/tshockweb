@@ -75,3 +75,58 @@ curl -H "Content-Type: application/json" -X GET -d '{"username":"superadmin-user
   "valid": true  // is valid call to the tshock terraria server
 }
 ```
+
+## Documentation
+We try to make the API as generic and self documenting as possible. Currently we list the whole directory structure with classes,methods and their respective parameters. 
+```
+http://127.0.0.1:14789/api/documentation
+
+{
+  "result": {
+    "controllers": {
+      "groups": {
+        "add_group": [
+          "group_name", 
+          "permissions"
+        ], 
+        "delete_group": [
+          "group_name"
+        ], 
+        "update_group": [
+          "group_name", 
+          "permissions"
+        ]
+      }, 
+      "manager": {
+        "execute_cmd": [
+          "command"
+        ]
+      }, 
+      "players": {
+        "add_player": [
+          "username", 
+          "password", 
+          "group", 
+          "ip"
+        ], 
+        "ban_player_by_ip": [
+          "ip", 
+          "reason"
+        ], 
+        "ban_player_by_username": [
+          "username", 
+          "reason"
+        ], 
+        "delete_player": [
+          "username"
+        ], 
+        "kick_player_by_username": [
+          "username", 
+          "reason"
+        ], 
+        "kill_player_by_username": [
+          "username", 
+          "reason"
+        ], 
+        
+```
