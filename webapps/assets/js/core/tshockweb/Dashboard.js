@@ -19,7 +19,7 @@
     function load_general_information() {
         $.ajax({
             type: 'POST',
-            url: base_url + "api/model/lists/server/get_server_details",
+            url: base_url + "api/model/lists/server/get_server_information",
             data: JSON.stringify({token: tshock.token}),
             dataType: 'json',
             contentType: "application/json",
@@ -30,7 +30,26 @@
                     $('#tshockweb_server').html(data.result.output.serverversion);
                     $('#tshockweb_world').html(data.result.output.world);
                 } else {
-                    console.log("Collecting data for amount of players on server has failed: " + JSON.stringify(data));
+                    console.log("Collecting data for server has failed: " + JSON.stringify(data));
+                }
+            }
+        });
+    }
+
+    // display world information about the server
+    function load_world_information() {
+        $.ajax({
+            type: 'POST',
+            url: base_url + "api/model/lists/world/get_world_details",
+            data: JSON.stringify({token: tshock.token}),
+            dataType: 'json',
+            contentType: "application/json",
+            success: function (data) {
+                if (data.status == 200) {
+                    if (data.result.output.bloodmoon == true) {$('#tshockweb_bloodmoon').html("On");} else {$('#tshockweb_bloodmoon').html("Off");}
+                    if (data.result.output.daytime == true) {$('#tshockweb_daytime').html("Day");} else {$('#tshockweb_daytime').html("Night");}
+                } else {
+                    console.log("Collecting data for world on server has failed: " + JSON.stringify(data));
                 }
             }
         });
@@ -58,6 +77,41 @@
                             "<img src='../../assets/img/terraria/user_logo.png' alt='' /></div>" +
                             "<div class='tile-text'>" + data.result.output[i].name + "<small>" +
                             "" + data.result.output[i].group + "</small></div></a></li>");
+                    }
+                } else {
+                    console.log("Collecting data for registered users on server has failed: " + JSON.stringify(data));
+                }
+            }
+        });
+    }
+
+    // display banned users in the database
+    function load_banned_users() {
+        $.ajax({
+            type: 'POST',
+            url: base_url + "api/model/lists/players/get_banned_players",
+            data: JSON.stringify({token: tshock.token}),
+            dataType: 'json',
+            contentType: "application/json",
+            success: function (data) {
+                if (data.status == 200) {
+                    // empty registered users
+                    $("#tshockweb_bannedusers").html("");
+                    // fill registered users
+                    var i;
+                    for (i = 0; i < data.result.output.length; i++) {
+                        var ip = "no ip address supplied";
+                        var username = data.result.output[i].name;
+                        if (data.result.output[i].ip != ""){ip = data.result.output[i].ip}
+                        $("#tshockweb_bannedusers").append("<li class='tile'><a class='tile-content ink-reaction' " +
+                            "href='" + base_url + "webapps/html/pages/profile.html?username="
+                            + username + "&registered=true'>" +
+                            "<div class='tile-icon'>" +
+                            "<img src='../../assets/img/terraria/user_logo.png' alt='' /></div>" +
+                            "<div class='tile-text'>" + data.result.output[i].name + "<small>" +
+                            "" + data.result.output[i].reason + ", " + ip + "</small></div>" +
+                            "<a class='btn btn-flat ink-reaction'>" +
+                            "<i class='md md-favorite'></i></a></a></li>");
                     }
                 } else {
                     console.log("Collecting data for registered users on server has failed: " + JSON.stringify(data));
@@ -106,7 +160,6 @@
                                         "<img src='../../assets/img/terraria/user_logo.png' alt='' /></div>" +
                                         "<div class='tile-text'>" + username + "<small>" +
                                         "" + group + ", " + sub_data.result.output + "</small></div>" +
-                                        "<a class='btn btn-flat ink-reaction'><i class='fa md-mic-off'></i></a>" +
                                         "<a class='btn btn-flat ink-reaction'><i class='fa fa-warning'></i></a>" +
                                         "<a class='btn btn-flat ink-reaction'><i class='fa fa-times'></i></a></a></li>");
                                 } else {
@@ -124,20 +177,32 @@
 
     $('#tshockweb_refresh_registeredusers').on('click', function (e) {
         load_registered_users();
+        toastr.success('Successfully refreshed registered users!', '');
     });
 
     $('#tshockweb_refresh_onlineusers').on('click', function (e) {
         load_online_users();
+        toastr.success('Successfully refreshed online users!', '');
     });
 
     $('#tshockweb_refresh_general').on('click', function (e) {
         load_general_information();
+        load_world_information();
+        toastr.success('Successfully refreshed general information!', '');
+    });
+
+    $('#tshockweb_refresh_bannedusers').on('click', function (e) {
+        load_banned_users();
+        toastr.success('Successfully refreshed banned users!', '');
     });
 
     // load dashboard data
     load_general_information();
+    load_world_information();
     load_online_users();
     load_registered_users();
+    load_banned_users();
+
 
 
 	namespace.TShockDashboard = new TShockDashboard;

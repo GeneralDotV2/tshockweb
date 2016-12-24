@@ -18,6 +18,7 @@
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/material-design-iconic-font.min.css?1421434286" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/rickshaw/rickshaw.css?1422792967" />
 		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/morris/morris.core.css?1420463396" />
+		<link type="text/css" rel="stylesheet" href="../../assets/css/theme-default/libs/toastr/toastr.css?1425466569">
 		<!-- END STYLESHEETS -->
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -153,13 +154,13 @@
 						<div class="row">
 
 							<!-- BEGIN ALERT - TIME ON SITE -->
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-2 col-sm-6">
 								<div class="card">
 									<div class="card-body no-padding">
 										<div class="alert alert-callout alert-success no-margin">
 											<h1 class="pull-right text-success"><i class="md md-account-circle"></i></h1>
 											<strong class="text-xl" id="tshockweb_amountonserver"></strong><br/>
-											<span class="opacity-50">Amount of people currently on the TShock Terraria server</span>
+											<span class="opacity-50"># of people on the server</span>s
 										</div>
 									</div><!--end .card-body -->
 								</div><!--end .card -->
@@ -167,13 +168,13 @@
 							<!-- END ALERT - TIME ON SITE -->
 
 							<!-- BEGIN ALERT - TIME ON SITE -->
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-2 col-sm-6">
 								<div class="card">
 									<div class="card-body no-padding">
 										<div class="alert alert-callout alert-info no-margin">
 											<h1 class="pull-right text-info"><i class="md md-av-timer"></i></h1>
 											<strong class="text-xl" id="tshockweb_uptime"></strong><br/>
-											<span class="opacity-50">Uptime of the TShock Terraria server</span>
+											<span class="opacity-50">Uptime of server</span>
 										</div>
 									</div><!--end .card-body -->
 								</div><!--end .card -->
@@ -181,13 +182,13 @@
 							<!-- END ALERT - TIME ON SITE -->
 
 							<!-- BEGIN ALERT - TIME ON SITE -->
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-2 col-sm-6">
 								<div class="card">
 									<div class="card-body no-padding">
 										<div class="alert alert-callout alert-warning no-margin">
 											<h1 class="pull-right text-warning"><i class="md md-cloud-queue"></i></h1>
 											<strong class="text-xl" id="tshockweb_world"></strong><br/>
-											<span class="opacity-50">World name of the TShock Terraria server</span>
+											<span class="opacity-50">World name</span>
 										</div>
 									</div><!--end .card-body -->
 								</div><!--end .card -->
@@ -195,13 +196,41 @@
 							<!-- END ALERT - TIME ON SITE -->
 
 							<!-- BEGIN ALERT - TIME ON SITE -->
-							<div class="col-md-3 col-sm-6">
+							<div class="col-md-2 col-sm-6">
 								<div class="card">
 									<div class="card-body no-padding">
 										<div class="alert alert-callout alert-error no-margin">
 											<h1 class="pull-right text-danger"><i class="fa fa-gears"></i></h1>
 											<strong class="text-xl" id="tshockweb_server"></strong><br/>
-											<span class="opacity-50">Version of the TShock Terraria server</span>
+											<span class="opacity-50">Server version</span>
+										</div>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+							<!-- END ALERT - TIME ON SITE -->
+
+							<!-- BEGIN ALERT - TIME ON SITE -->
+							<div class="col-md-2 col-sm-6">
+								<div class="card">
+									<div class="card-body no-padding">
+										<div class="alert alert-callout alert-black no-margin">
+											<h1 class="pull-right text-black"><i class="fa fa-moon-o"></i></h1>
+											<strong class="text-xl" id="tshockweb_bloodmoon"></strong><br/>
+											<span class="opacity-50">Bloodmoon status</span>
+										</div>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+							<!-- END ALERT - TIME ON SITE -->
+
+							<!-- BEGIN ALERT - TIME ON SITE -->
+							<div class="col-md-2 col-sm-6">
+								<div class="card">
+									<div class="card-body no-padding">
+										<div class="alert alert-callout alert-purple no-margin">
+											<h1 class="pull-right text-purple"><i class="md md-wb-sunny"></i></h1>
+											<strong class="text-xl" id="tshockweb_daytime"></strong><br/>
+											<span class="opacity-50">Daytime status</span>
 										</div>
 									</div><!--end .card-body -->
 								</div><!--end .card -->
@@ -294,6 +323,25 @@
 							</div><!--end .col -->
 							<!-- END TODOS -->
 
+							<!-- BEGIN TODOS -->
+							<div class="col-md-3">
+								<div class="card ">
+									<div class="card-head">
+										<header>Banned users</header>
+										<div class="tools">
+											<a class="btn btn-icon-toggle" id="tshockweb_refresh_bannedusers">
+												<i class="md md-refresh"></i>
+											</a>
+										</div>
+									</div><!--end .card-head -->
+									<div class="card-body no-padding height-9 scroll">
+										<ul class="list" data-sortable="true" id="tshockweb_bannedusers">
+										</ul>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+							<!-- END TODOS -->
+
 						</div><!--end .row -->
 
 					</div><!--end .section-body -->
@@ -357,6 +405,7 @@
 		<!-- BEGIN JAVASCRIPT -->
 		<script src="../../assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
 		<script src="../../assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+		<script src="../../assets/js/libs/jquery-ui/jquery-ui.min.js"></script>
 		<script src="../../assets/js/libs/bootstrap/bootstrap.min.js"></script>
 		<script src="../../assets/js/libs/spin.js/spin.min.js"></script>
 		<script src="../../assets/js/libs/autosize/jquery.autosize.min.js"></script>
@@ -370,6 +419,7 @@
 		<script src="../../assets/js/libs/jquery-knob/jquery.knob.min.js"></script>
 		<script src="../../assets/js/libs/sparkline/jquery.sparkline.min.js"></script>
 		<script src="../../assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+		<script src="../../assets/js/libs/toastr/toastr.js"></script>
 		<script src="../../assets/js/libs/d3/d3.min.js"></script>
 		<script src="../../assets/js/libs/d3/d3.v3.js"></script>
 		<script src="../../assets/js/libs/rickshaw/rickshaw.min.js"></script>
@@ -383,9 +433,10 @@
 		<script src="../../assets/js/core/demo/Demo.js"></script>
 		<script src="../../assets/js/core/demo/DemoDashboard.js"></script>
 		<script src="../../assets/js/libs/jquery-cookie/js.cookie-2.1.3.min.js"></script>
+		<script src="../../assets/js/core/tshockweb/Notifications.js"></script>
 		<script src="../../assets/js/core/tshockweb/Authenticate.js"></script>
 		<script src="../../assets/js/core/tshockweb/Dashboard.js"></script>
+		<div id="tshock_dynamic_script_loader"></div>
 		<!-- END JAVASCRIPT -->
-
 	</body>
 </html>

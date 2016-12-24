@@ -7,7 +7,7 @@ class ServerList(object):
     """
 
     @staticmethod
-    def get_server_details(api):
+    def get_server_information(api):
         """
         Get server
 

@@ -1127,6 +1127,12 @@ a.text-warning:hover {
 .text-danger {
   color: #f44336;
 }
+.text-black {
+  color: black;
+}
+.text-purple {
+  color: purple;
+}
 a.text-danger:hover {
   color: #ea1c0d;
 }
@@ -6762,6 +6768,12 @@ sub.badge {
 }
 .alert-callout.alert-danger:before {
   background: #f44336;
+}
+.alert-callout.alert-black:before {
+  background: black;
+}
+.alert-callout.alert-purple:before {
+  background: purple;
 }
 .breadcrumb {
   padding: 0;

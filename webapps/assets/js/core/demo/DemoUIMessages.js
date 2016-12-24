@@ -102,8 +102,11 @@
 			toastr.error('Duplicate item', '');
 		});
 		$('#toast-success').on('click', function (e) {
+			console.log("success");
 			o._toastrStateConfig();
+			console.log("success1");
 			toastr.success('Added to catalog', '');
+			console.log("success2");
 		});
 	};
 
@@ -204,7 +207,7 @@
 		toastr.options.showMethod = 'slideDown';
 		toastr.options.hideMethod = 'slideUp';
 	};
-
+    console.log("success1");
 	// =========================================================================
 	namespace.DemoUIMessages = new DemoUIMessages;
 }(this.materialadmin, jQuery)); // pass in (namespace, jQuery):

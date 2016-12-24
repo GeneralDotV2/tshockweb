@@ -26,10 +26,11 @@
         contentType: "application/json",
         success: function (data) {
             if (data.status == 200) {
-                $("#tshockweb_executedcommands").append("<div class='col-xs-12'><p>" +
+                $("#tshockweb_executedcommands").prepend("<div class='col-xs-12'><p>" +
                     "<a class='text-medium text-lg text-primary' href='#'>Executed command & result:</a><br>" +
                     "<a class='opacity-75'>"+raw_command+"</a></p>" +
-                    "<div class='contain-xs pull-left'>"+data.result.output+"</div></div>");
+                    "<div class='contain-xs pull-left'>"+String(data.result.output).replace(/</g, "&lt;").replace(/>/g, "&gt;")+"</div></div>");
+                $('#tshockweb_input').val("");
             } else {
                 console.log("Collecting data for amount of players on server has failed: "+JSON.stringify(data));
             }
