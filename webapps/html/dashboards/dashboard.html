@@ -59,62 +59,22 @@
 						</li><!--end .dropdown -->
 						<li class="dropdown hidden-xs">
 							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
-								<i class="fa fa-bell"></i><sup class="badge style-danger">4</sup>
+								<i class="fa fa-power-off"></i>
 							</a>
 							<ul class="dropdown-menu animation-expand">
-								<li class="dropdown-header">Today's messages</li>
+								<li class="dropdown-header">What do you want to do?</li>
 								<li>
-									<a class="alert alert-callout alert-warning" href="javascript:void(0);">
-										<img class="pull-right img-circle dropdown-avatar" src="../../assets/img/avatar2.jpg?1404026449" alt="" />
-										<strong>Alex Anistor</strong><br/>
-										<small>Testing functionality...</small>
+									<a class="alert alert-callout alert-info" href="javascript:void(0);" id="tshockweb_reboot">
+										<strong>Reboot</strong><br/>
+										<small>Rebooting TShock server...</small>
 									</a>
 								</li>
 								<li>
-									<a class="alert alert-callout alert-info" href="javascript:void(0);">
-										<img class="pull-right img-circle dropdown-avatar" src="../../assets/img/avatar3.jpg?1404026799" alt="" />
-										<strong>Alicia Adell</strong><br/>
-										<small>Reviewing last changes...</small>
+									<a class="alert alert-callout alert-error" href="javascript:void(0);" id="tshockweb_shutdown">
+										<strong>Shutdown</strong><br/>
+										<small>Shutdown TShock server...</small>
 									</a>
 								</li>
-								<li class="dropdown-header">Options</li>
-								<li><a href="../pages/login.html">View all messages <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
-								<li><a href="../pages/login.html">Mark as read <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
-							</ul><!--end .dropdown-menu -->
-						</li><!--end .dropdown -->
-						<li class="dropdown hidden-xs">
-							<a href="javascript:void(0);" class="btn btn-icon-toggle btn-default" data-toggle="dropdown">
-								<i class="fa fa-area-chart"></i>
-							</a>
-							<ul class="dropdown-menu animation-expand">
-								<li class="dropdown-header">Server load</li>
-								<li class="dropdown-progress">
-									<a href="javascript:void(0);">
-										<div class="dropdown-label">
-											<span class="text-light">Server load <strong>Today</strong></span>
-											<strong class="pull-right">93%</strong>
-										</div>
-										<div class="progress"><div class="progress-bar progress-bar-danger" style="width: 93%"></div></div>
-									</a>
-								</li><!--end .dropdown-progress -->
-								<li class="dropdown-progress">
-									<a href="javascript:void(0);">
-										<div class="dropdown-label">
-											<span class="text-light">Server load <strong>Yesterday</strong></span>
-											<strong class="pull-right">30%</strong>
-										</div>
-										<div class="progress"><div class="progress-bar progress-bar-success" style="width: 30%"></div></div>
-									</a>
-								</li><!--end .dropdown-progress -->
-								<li class="dropdown-progress">
-									<a href="javascript:void(0);">
-										<div class="dropdown-label">
-											<span class="text-light">Server load <strong>Lastweek</strong></span>
-											<strong class="pull-right">74%</strong>
-										</div>
-										<div class="progress"><div class="progress-bar progress-bar-warning" style="width: 74%"></div></div>
-									</a>
-								</li><!--end .dropdown-progress -->
 							</ul><!--end .dropdown-menu -->
 						</li><!--end .dropdown -->
 					</ul><!--end .header-nav-options -->
@@ -160,7 +120,7 @@
 										<div class="alert alert-callout alert-success no-margin">
 											<h1 class="pull-right text-success"><i class="md md-account-circle"></i></h1>
 											<strong class="text-xl" id="tshockweb_amountonserver"></strong><br/>
-											<span class="opacity-50"># of people on the server</span>s
+											<span class="opacity-50"># of people on the server</span>
 										</div>
 									</div><!--end .card-body -->
 								</div><!--end .card -->
@@ -285,7 +245,7 @@
 									</div><!--end .card-head -->
 									<div class="card-body height-5">
 										<div class="pull-right text-center">
-											<em class="text-primary">Temperature</em>
+											<em class="text-primary">CPU usage in %</em>
 											<br/>
 											<div id="serverStatusKnob" class="knob knob-shadow knob-primary knob-body-track size-2">
 												<input type="text" class="dial" data-min="0" data-max="100" data-thickness=".09" value="50" data-readOnly=true>
@@ -342,8 +302,63 @@
 							</div><!--end .col -->
 							<!-- END TODOS -->
 
+							<!-- BEGIN NEW REGISTRATIONS -->
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-head">
+										<header>Quick server actions</header>
+									</div><!--end .card-head -->
+									<div class="card-body no-padding height-9 scroll">
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright" id="tshockweb_bloodmoon_toggle">Toggle bloodmoon</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright disabled" id="tshockweb_meteor_drop">Drop meteor</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright" id="tshockweb_butcher_npcs">Butcher NPCs</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright tshockweb_daytime" id="tshockweb_daytime_day">Set daytime to day</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright tshockweb_daytime" id="tshockweb_daytime_night">Set daytime to night</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright" id="tshockweb_world_save">Save world</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright" id="tshockweb_server_reload">Reload server config</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright tshockweb_world_autosave" id="tshockweb_world_autosave_true">Enable world autosave</button></p>
+											</li>
+										</ul>
+										<ul class="list">
+											<li class="tile col-md-12">
+												<p><button type="button" class="btn btn-block ink-reaction btn-default-bright tshockweb_world_autosave" id="tshockweb_world_autosave_false">Disable world autosave</button></p>
+											</li>
+										</ul>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+							<!-- END NEW REGISTRATIONS -->
 						</div><!--end .row -->
-
 					</div><!--end .section-body -->
 				</section>
 			</div><!--end #content-->
@@ -436,7 +451,7 @@
 		<script src="../../assets/js/core/tshockweb/Notifications.js"></script>
 		<script src="../../assets/js/core/tshockweb/Authenticate.js"></script>
 		<script src="../../assets/js/core/tshockweb/Dashboard.js"></script>
-		<div id="tshock_dynamic_script_loader"></div>
+		<script src="../../assets/js/core/tshockweb/ServerManager.js"></script>
 		<!-- END JAVASCRIPT -->
 	</body>
 </html>

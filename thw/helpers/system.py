@@ -53,7 +53,7 @@ class SystemHelper(object):
         """
         Lists the methods by path and module names
 
-        :param path: relative path of module (e.g. thw/model/lists/players.py)
+        :param path: relative path of module (e.g. thw/model/lists/playercontroller.py)
         :type path: str
         :param module_name: name of a module (e.g. players)
         :type module_name: str
@@ -75,7 +75,7 @@ class SystemHelper(object):
         """
         Fetch a class by path and module name
 
-        :param path: relative path of module (e.g. thw/model/lists/players.py)
+        :param path: relative path of module (e.g. thw/model/lists/playercontroller.py)
         :type path: str
         :param module_name: name of a module (e.g. players)
         :type module_name: str

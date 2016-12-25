@@ -44,7 +44,7 @@ class WorldController(object):
         :return:
         """
 
-        return api.get(path="world/butcher", params={'killfriendly': status})
+        return api.get(path="world/butcher", params={'killfriendly': status})['response']
 
     @staticmethod
     def save_world(api):

@@ -36,7 +36,9 @@
                     // redirect to dashboard
                     window.location.replace(window.location.protocol + "//" + window.location.host + "/" + "webapps/html/dashboards/dashboard.html");
                 } else {
-                    alert("Login failed: " + data.result);
+                    var message = "Login failed: " + data.result;
+                    toastr.error(message, '');
+                    console.log(message);
                 }
             }
         });

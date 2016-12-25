@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b17145f-609b-46c6-9061-35ff168a53c7" name="Default" comment="Improved API, GUI, tests, add notifications">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Notifications.js" />
+    <list default="true" id="1b17145f-609b-46c6-9061-35ff168a53c7" name="Default" comment="Solved major bug in API, improved">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/team/blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/team/green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/team/purple.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/team/red.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/team/white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/team/white_noteam.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/img/terraria/team/yellow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Profile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/ServerManager.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/thw/controllers/manager.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thw/controllers/groups.py" afterPath="$PROJECT_DIR$/thw/controllers/groupcontroller.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thw/controllers/players.py" afterPath="$PROJECT_DIR$/thw/controllers/playercontroller.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thw/controllers/server.py" afterPath="$PROJECT_DIR$/thw/controllers/servercontroller.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thw/controllers/world.py" afterPath="$PROJECT_DIR$/thw/controllers/worldcontroller.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/tshockweb.json" afterPath="$PROJECT_DIR$/config/tshockweb.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/thw_web_api_test.py" afterPath="$PROJECT_DIR$/tests/thw_web_api_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thw/model/lists/server.py" afterPath="$PROJECT_DIR$/thw/model/lists/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/css/theme-default/materialadmin.css" afterPath="$PROJECT_DIR$/webapps/assets/css/theme-default/materialadmin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoUIMessages.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoUIMessages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/thw_python_api_test.py" afterPath="$PROJECT_DIR$/tests/thw_python_api_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thw/helpers/system.py" afterPath="$PROJECT_DIR$/thw/helpers/system.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tshockweb.py" afterPath="$PROJECT_DIR$/tshockweb.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js" afterPath="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/html/dashboards/dashboard.html" afterPath="$PROJECT_DIR$/webapps/html/dashboards/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/html/pages/commandboard.html" afterPath="$PROJECT_DIR$/webapps/html/pages/commandboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/html/pages/login.html" afterPath="$PROJECT_DIR$/webapps/html/pages/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapps/html/pages/profile.html" afterPath="$PROJECT_DIR$/webapps/html/pages/profile.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +39,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tshockweb$api_test.coverage" NAME="api_test Coverage Results" MODIFIED="1481914487978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/tshockweb$thw_web_api_test.coverage" NAME="thw_web_api_test Coverage Results" MODIFIED="1481982703427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/tshockweb$thw_web_api_test__1_.coverage" NAME="thw_web_api_test (1) Coverage Results" MODIFIED="1482542947137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/tshockweb$thw_web_api_test__1_.coverage" NAME="thw_web_api_test (1) Coverage Results" MODIFIED="1482594106142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/tshockweb$tshockweb.coverage" NAME="tshockweb Coverage Results" MODIFIED="1482233287305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -33,11 +48,76 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="commandboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/html/pages/commandboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/html/pages/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tshockweb.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/tshockweb.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/html/pages/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="113" column="124" lean-forward="true" selection-start-line="113" selection-start-column="124" selection-end-line="113" selection-end-column="124" />
+              <folding>
+                <element signature="n#ul#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Commandboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="31" column="76" lean-forward="true" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Profile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="thw_web_api_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/thw_web_api_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+              <caret line="8" column="80" lean-forward="true" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -53,66 +133,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tshockweb.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/tshockweb.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/html/dashboards/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="405" column="8" lean-forward="true" selection-start-line="405" selection-start-column="8" selection-end-line="405" selection-end-column="80" />
+            <state relative-caret-position="355">
+              <caret line="448" column="74" lean-forward="false" selection-start-line="448" selection-start-column="74" selection-end-line="448" selection-end-column="74" />
               <folding>
+                <element signature="n#ul#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#2;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Notifications.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Notifications.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toastr.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/assets/js/libs/toastr/toastr.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="155" column="38" lean-forward="false" selection-start-line="155" selection-start-column="33" selection-end-line="155" selection-end-column="38" />
-              <folding>
-                <marker date="1425474338000" expanded="true" signature="6485:6492" ph="×" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="players.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thw/controllers/players.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="84" column="20" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="players.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thw/model/lists/players.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -120,18 +155,8 @@
       <file leaf-file-name="Dashboard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="196" column="7" lean-forward="false" selection-start-line="196" selection-start-column="7" selection-end-line="196" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DemoUIMessages.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/demo/DemoUIMessages.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="203" column="46" lean-forward="true" selection-start-line="203" selection-start-column="46" selection-end-line="203" selection-end-column="46" />
+            <state relative-caret-position="414">
+              <caret line="179" column="109" lean-forward="true" selection-start-line="179" selection-start-column="109" selection-end-line="179" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -148,25 +173,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main-</find>
-      <find>Config</find>
-      <find>Done setting username &amp; group</find>
-      <find>tshockweb_profileinfo</find>
-      <find>username</find>
-      <find>raw</find>
-      <find>Registered users</find>
-      <find>api/logout</find>
-      <find>Amount of people on the server</find>
-      <find>alert alert-callout alert-info no-margin</find>
-      <find>.sparkline-revenue</find>
-      <find>print</find>
-      <find>Online users</find>
-      <find>Uptime of TShock Terraria server</find>
-      <find>Server Activity</find>
-      <find>.sparkline-visits</find>
-      <find>btn btn-floating-action btn-default-bright</find>
-      <find>btn btn-icon-toggle btn-default</find>
-      <find>tshockweb_amount</find>
       <find>.alert.alert-callout:before</find>
       <find>.text-danger</find>
       <find>Amount of people currently on the TShock Terraria server</find>
@@ -177,7 +183,26 @@
       <find>-info</find>
       <find>tshockweb_refresh_bannedusers</find>
       <find>refres</find>
+      <find>of people on the server</find>
+      <find>fa fa-bell</find>
+      <find>md md-refresh</find>
+      <find>md md-folder-open</find>
+      <find>Online</find>
+      <find>nano has-scrollbar</find>
+      <find>md md-close</find>
       <find>fa md-mic-off</find>
+      <find>tshockweb_bloodmoon</find>
+      <find>fa fa-power-off</find>
+      <find>fa fa-area-chart</find>
+      <find>commandboard.html</find>
+      <find>menubar-scroll-panel</find>
+      <find>MATERIAL ADMIN</find>
+      <find>header-nav header-nav-options</find>
+      <find>headerbar</find>
+      <find>headerbar-right</find>
+      <find>title</find>
+      <find>md md-report-problem</find>
+      <find>fa fa-envelope</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,30 +224,36 @@
         <option value="$PROJECT_DIR$/thw/controllers/players.py" />
         <option value="$PROJECT_DIR$/tests/api_test.py" />
         <option value="$PROJECT_DIR$/thw/helpers/network.py" />
-        <option value="$PROJECT_DIR$/thw/helpers/system.py" />
         <option value="$PROJECT_DIR$/tests/thw_python_api_test.py" />
         <option value="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie/LICENSE" />
-        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js" />
         <option value="$PROJECT_DIR$/webapps/html/pages/search/results-text.html" />
-        <option value="$PROJECT_DIR$/webapps/html/pages/login.html" />
         <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js" />
         <option value="$PROJECT_DIR$/thw/model/lists/players.py" />
         <option value="$PROJECT_DIR$/thw/helpers/decorators.py" />
-        <option value="$PROJECT_DIR$/webapps/html/pages/commandboard.html" />
         <option value="$PROJECT_DIR$/thw/helpers/api.py" />
         <option value="$PROJECT_DIR$/thw/controllers/server.py" />
         <option value="$PROJECT_DIR$/thw/controllers/world.py" />
         <option value="$PROJECT_DIR$/thw/controllers/manager.py" />
-        <option value="$PROJECT_DIR$/tshockweb.py" />
         <option value="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoDashboard.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/webapps/assets/css/theme-default/materialadmin.css" />
         <option value="$PROJECT_DIR$/thw/model/lists/server.py" />
-        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js" />
         <option value="$PROJECT_DIR$/webapps/assets/js/core/demo/DemoUIMessages.js" />
         <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Notifications.js" />
+        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js" />
+        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/ServerManager.js" />
+        <option value="$PROJECT_DIR$/thw/helpers/system.py" />
+        <option value="$PROJECT_DIR$/thw/controllers/managercontroller.py" />
+        <option value="$PROJECT_DIR$/thw/controllers/servercontroller.py" />
+        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js" />
+        <option value="$PROJECT_DIR$/tshockweb.py" />
+        <option value="$PROJECT_DIR$/thw/controllers/worldcontroller.py" />
+        <option value="$PROJECT_DIR$/webapps/html/pages/commandboard.html" />
+        <option value="$PROJECT_DIR$/webapps/html/pages/login.html" />
+        <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Profile.js" />
         <option value="$PROJECT_DIR$/webapps/html/dashboards/dashboard.html" />
         <option value="$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js" />
+        <option value="$PROJECT_DIR$/webapps/html/pages/profile.html" />
         <option value="$PROJECT_DIR$/tests/thw_web_api_test.py" />
         <option value="$PROJECT_DIR$/config/tshockweb.json" />
       </list>
@@ -366,10 +397,6 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -424,84 +451,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme-default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tshockweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -637,10 +586,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webapps/assets/js/core/tshockweb" />
+      <recent name="$PROJECT_DIR$/webapps/assets/img/terraria/team" />
       <recent name="$PROJECT_DIR$/thw/controllers" />
       <recent name="$PROJECT_DIR$/webapps/html/pages" />
       <recent name="$PROJECT_DIR$/webapps/assets/img/terraria" />
-      <recent name="$PROJECT_DIR$/webapps/assets/js/libs/jquery-cookie" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/webapps/assets/img/terraria" />
@@ -1038,7 +987,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482461443361</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Improved API, GUI, tests, add notifications, improve output of command board">
+      <created>1482546158602</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1482546158602</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1059,7 +1015,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.49574015" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4074074" sideWeight="0.48509052" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32772166" sideWeight="0.47231096" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22895622" sideWeight="0.4680511" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.332211" sideWeight="0.4680511" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26890308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1096,41 +1052,14 @@
     <MESSAGE value="improve api requests to posts, improve tests and add first client side js script to login" />
     <MESSAGE value="api: add logout to api, destroy token; GUI: login page works, logout works" />
     <MESSAGE value="Improved API, GUI, tests, add documentation to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved API, GUI, tests, add documentation to readme" />
+    <MESSAGE value="Improved API, GUI, tests, add notifications, improve output of command board" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved API, GUI, tests, add notifications, improve output of command board" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thw/helpers/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/controllers/groups.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/source/App.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/demo/Demo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1229,31 +1158,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/html/pages/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/html/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="88" column="15" lean-forward="true" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thw/helpers/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,6 +1170,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,27 +1178,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="130" column="89" lean-forward="false" selection-start-line="130" selection-start-column="89" selection-end-line="130" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/controllers/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="53" column="103" lean-forward="false" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thw/controllers/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tshockweb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1296,24 +1186,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2373">
           <caret line="65" column="6" lean-forward="true" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="70" lean-forward="false" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/html/pages/commandboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3204">
-          <caret line="178" column="75" lean-forward="false" selection-start-line="178" selection-start-column="75" selection-end-line="178" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1341,14 +1214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thw/controllers/world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1314">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thw/model/lists/groups.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
@@ -1369,14 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1407,10 +1264,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thw/controllers/players.py">
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Authenticate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="84" column="20" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="20" />
+        <state relative-caret-position="246">
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="60" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/helpers/system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="86" column="49" lean-forward="true" selection-start-line="86" selection-start-column="49" selection-end-line="86" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/managercontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/playercontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="95" column="26" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="84" column="16" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tshockweb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="204" column="18" lean-forward="false" selection-start-line="204" selection-start-column="18" selection-end-line="204" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Web.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="44" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/servercontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thw/controllers/worldcontroller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="61" column="38" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/ServerManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="49" column="79" lean-forward="true" selection-start-line="49" selection-start-column="79" selection-end-line="49" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/html/pages/commandboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/html/pages/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Commandboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="31" column="76" lean-forward="true" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/html/dashboards/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="448" column="74" lean-forward="false" selection-start-line="448" selection-start-column="74" selection-end-line="448" selection-end-column="74" />
+          <folding>
+            <element signature="n#ul#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="179" column="109" lean-forward="true" selection-start-line="179" selection-start-column="109" selection-end-line="179" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapps/html/pages/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="113" column="124" lean-forward="true" selection-start-line="113" selection-start-column="124" selection-end-line="113" selection-end-column="124" />
+          <folding>
+            <element signature="n#ul#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/thw_web_api_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="80" lean-forward="true" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -1423,44 +1438,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Notifications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/html/dashboards/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="405" column="8" lean-forward="true" selection-start-line="405" selection-start-column="8" selection-end-line="405" selection-end-column="80" />
-          <folding>
-            <element signature="n#div#0;n#div#2;n#div#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapps/assets/js/core/tshockweb/Dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="196" column="7" lean-forward="false" selection-start-line="196" selection-start-column="7" selection-end-line="196" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/thw_web_api_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/tshockweb.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="54">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>

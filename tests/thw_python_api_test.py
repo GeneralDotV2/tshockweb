@@ -2,10 +2,10 @@ from thw.model.lists.server import ServerList
 from thw.model.lists.world import WorldList
 from thw.model.lists.players import PlayerList
 from thw.model.lists.groups import GroupList
-from thw.controllers.server import ServerController
-from thw.controllers.groups import GroupController
-from thw.controllers.players import PlayerController
-from thw.controllers.world import WorldController
+from thw.controllers.servercontroller import ServerController
+from thw.controllers.groupcontroller import GroupController
+from thw.controllers.playercontroller import PlayerController
+from thw.controllers.worldcontroller import WorldController
 from thw.helpers.api import TSHOCKClient, HttpException
 
 # setup api

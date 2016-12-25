@@ -3,7 +3,7 @@ from functools import wraps
 from requests import ConnectionError
 from thw.helpers.decorators import pack
 from thw.helpers.system import SystemHelper
-from thw.controllers.server import ServerController
+from thw.controllers.servercontroller import ServerController
 from thw.helpers.api import TSHOCKClient, HttpException
 from flask import Flask, send_from_directory, request, redirect, jsonify
 
