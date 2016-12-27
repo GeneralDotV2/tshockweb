@@ -13,6 +13,8 @@
 
     console.log("Starting collecting data for profile");
 
+    var terraria_wiki_url = "http://terraria.gamepedia.com/";
+
     function get_url_parameters() {
         var result = {};
         var items = location.search.substr(1).split("&");
@@ -48,14 +50,14 @@
                 if (data.status == 200) {
                     tsw_image_url = base_url + "webapps/assets/img/terraria/player/items/Item_"+data.result+".png";
                     $("#tshockweb_inventory_overview").append("<li class='tile'>" +
-                      "<a class='tile-content ink-reaction'><div class='tile-icon'>" +
+                      "<a class='tile-content ink-reaction' href='"+terraria_wiki_url+item_name.replace(/ /g, "_")+"'><div class='tile-icon'>" +
                       "<img src='"+tsw_image_url+"' alt='' />" +
                       "</div><div class='tile-text'>"+item_name+"<small>Amount: " + amount +
                       "</small></div></a></li>");
                 } else {
                     tsw_image_url = base_url + "webapps/assets/img/terraria/player/items/Item_0.png";
                     $("#tshockweb_inventory_overview").append("<li class='tile'>" +
-                      "<a class='tile-content ink-reaction'><div class='tile-icon'>" +
+                      "<a class='tile-content ink-reaction' href='"+terraria_wiki_url+item_name.replace(/ /g, "_")+"'><div class='tile-icon'>" +
                       "<img src='"+tsw_image_url+"' alt='' />" +
                       "</div><div class='tile-text'>"+item_name+"<small>Amount: " + amount +
                       "</small></div></a></li>");
@@ -74,18 +76,18 @@
             success: function (data) {
                 var tsw_image_url;
                 if (data.status == 200) {
-                    tsw_image_url = base_url + "webapps/assets/img/terraria/player/buffs/"+data.result+".png";
+                    tsw_image_url = base_url + "webapps/assets/img/terraria/player/buffs/"+data.result.replace(/ /g, "_")+".png";
                     $("#tshockweb_buffs_overview").append("<li class='tile'>" +
-                      "<a class='tile-content ink-reaction'><div class='tile-icon'>" +
+                      "<a class='tile-content ink-reaction' href='"+terraria_wiki_url+data.result.replace(/ /g, "_")+"'><div class='tile-icon'>" +
                       "<img src='"+tsw_image_url+"' alt='' />" +
-                      "</div><div class='tile-text'>"+data.result.replace(/_/g, " ")+"<small>" +
+                      "</div><div class='tile-text'>"+data.result+"<small>" +
                       "</small></div></a></li>");
                 } else {
                     tsw_image_url = base_url + "webapps/assets/img/terraria/player/items/Item_0.png";
                     $("#tshockweb_buffs_overview").append("<li class='tile'>" +
-                      "<a class='tile-content ink-reaction'><div class='tile-icon'>" +
+                      "<a class='tile-content ink-reaction' href='"+terraria_wiki_url+data.result.replace(/ /g, "_")+"'><div class='tile-icon'>" +
                       "<img src='"+tsw_image_url+"' alt='' />" +
-                      "</div><div class='tile-text'>"+data.result.replace(/_/g, " ")+"<small>" +
+                      "</div><div class='tile-text'>"+data.result+"<small>" +
                       "</small></div></a></li>");
                 }
             }
@@ -104,14 +106,14 @@
                 if (data.status == 200) {
                     tsw_image_url = base_url + "webapps/assets/img/terraria/player/items/Item_"+item_id+".png";
                     $("#tshockweb_armor_overview").append("<li class='tile'>" +
-                      "<a class='tile-content ink-reaction'><div class='tile-icon'>" +
+                      "<a class='tile-content ink-reaction' href='"+terraria_wiki_url+data.result.replace(/ /g, "_")+"'><div class='tile-icon'>" +
                       "<img src='"+tsw_image_url+"' alt='' />" +
                       "</div><div class='tile-text'>"+data.result+"<small>Bonus: " + bonus +
                       "</small></div></a></li>");
                 } else {
                     tsw_image_url = base_url + "webapps/assets/img/terraria/player/items/Item_0.png";
                     $("#tshockweb_armor_overview").append("<li class='tile'>" +
-                      "<a class='tile-content ink-reaction'><div class='tile-icon'>" +
+                      "<a class='tile-content ink-reaction' href='"+terraria_wiki_url+data.result.replace(/ /g, "_")+"'><div class='tile-icon'>" +
                       "<img src='"+tsw_image_url+"' alt='' />" +
                       "</div><div class='tile-text'>"+data.result+"<small>Bonus: " + bonus +
                       "</small></div></a></li>");
