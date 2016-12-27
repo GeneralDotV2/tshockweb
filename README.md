@@ -24,11 +24,14 @@ Currently in alpha
 ![](http://i.imgur.com/PiXO1kj.png)
 
 * Easily monitor your tshock terraria server with the dashboard
-![](http://i.imgur.com/5gWbJZF.png)
+![](http://i.imgur.com/tFlLHtU.png)
+![](http://i.imgur.com/k9sayny.png)
 
 * Easily manage your raw tshock commands with an online command tool
-![](http://i.imgur.com/KvoGAdC.jpg)
+![](http://i.imgur.com/Q1R4Rzx.png)
 
+* Check and manage what online users are doing on your server
+![](http://i.imgur.com/siUIN5u.png)
 
 ## Development
 * Easy python API:
