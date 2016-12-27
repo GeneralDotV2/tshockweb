@@ -130,3 +130,14 @@ http://127.0.0.1:14789/api/documentation
         ], 
         
 ```
+
+## Fetching new terraria images
+You can convert your terraria images to `image/PNG` with `TExtract`: https://forums.terraria.org/index.php?threads/textract-extract-terrarias-images-sound-effects-and-music.937/
+Items can be mapped through this website: http://terraria.gamepedia.com/Item_IDs_Part1
+`Copy everything to a file, delete the tabs and delete everything with .+?(png)`
+
+## Known issues
+* The meteor can sometimes throw a `Internal server error`, this is being discussed in https://github.com/NyxStudios/TShock/issues/1361
+* Armor/Inventory can sometimes show up other items than in reality (although 90% should be spot on). This because of ID overlapping in terraria itself. As seen here: http://terraria.gamepedia.com/Item_IDs#1801_.E2.86.92_2100
+* If a item is not available in our image databank, it will display a empty image
+* If the tshock server crashes its possible that the internal `Flask` server will crash with a `Broken Pipe` error. A restart of the server is required when this occurs.

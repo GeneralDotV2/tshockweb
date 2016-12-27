@@ -38,5 +38,9 @@ print requests.post('http://127.0.0.1:14789/api/model/lists/world/get_world_deta
                     json={"token": response['result']['token']}).text
 print requests.post('http://127.0.0.1:14789/api/model/lists/players/get_banned_players',
                     json={"token": response['result']['token']}).text
+print requests.post('http://127.0.0.1:14789/api/config/terraria/item/by_id',
+                    json={"token": response['result']['token'], "id": 3000}).text
+print requests.post('http://127.0.0.1:14789/api/config/terraria/item/by_name',
+                    json={"token": response['result']['token'], "name": "Lake of Fire"}).text
 print requests.post('http://127.0.0.1:14789/api/logout', json={"token": response['result']['token']}).text
 print requests.post('http://127.0.0.1:14789/api/validate', json={"token": response['result']['token']}).text

@@ -10,6 +10,12 @@ from flask import Flask, send_from_directory, request, redirect, jsonify
 
 with open('config/tshockweb.json') as settings_file:
     settings = json.load(settings_file)
+with open('config/terraria_items_by_name.json') as terraria_file:
+    terraria_items_by_name = json.load(terraria_file)
+with open('config/terraria_items_by_numbers.json') as terraria_file:
+    terraria_items_by_id = json.load(terraria_file)
+with open('config/terraria_buffs.json') as terraria_file:
+    terraria_buff_by_id = json.load(terraria_file)
 
 app = Flask(__name__, static_folder=settings['tshock_web']['web']['base_location'])
 API_BASE_PATH = "/api"
@@ -34,7 +40,7 @@ def authenicate(func):
             return func(*args, **kwargs)
         except HttpException as ex:
             return jsonify({'status': 403, 'result': ex.message, 'valid': False})
-        except RuntimeError as ex:
+        except (RuntimeError, AttributeError, IOError) as ex:
             return jsonify({'status': 403, 'result': ex.message, 'valid': True})
         except ConnectionError:
             return jsonify({'status': 500, 'result': 'Connection errors to TSHOCK server, '
@@ -67,6 +73,54 @@ def config():
     return settings, 200
 
 
+@app.route(API_BASE_PATH + "/config/terraria/item/by_name", methods=['POST'])
+@pack
+def get_item_by_name():
+    """
+    Fetch the item by name
+
+    :return: item id
+    """
+
+    content = request.json
+    if content is not None and 'name' in content:
+        return terraria_items_by_name[content['name']], 200
+    else:
+        raise RuntimeError('No name provided')
+
+
+@app.route(API_BASE_PATH + "/config/terraria/item/by_id", methods=['POST'])
+@pack
+def get_item_by_id():
+    """
+    Fetch the item by id
+
+    :return: item name
+    """
+
+    content = request.json
+    if content is not None and 'id' in content:
+        return terraria_items_by_id[str(content['id'])], 200
+    else:
+        raise RuntimeError('No id provided')
+
+
+@app.route(API_BASE_PATH + "/config/terraria/buff/by_id", methods=['POST'])
+@pack
+def get_buff_by_id():
+    """
+    Fetch the buff by id
+
+    :return: buff name
+    """
+
+    content = request.json
+    if content is not None and 'id' in content:
+        return terraria_buff_by_id[str(content['id'])], 200
+    else:
+        raise RuntimeError('No id provided')
+
+
 @app.route(API_BASE_PATH + "/login", methods=['POST'])
 @pack
 def login():
@@ -88,7 +142,7 @@ def login():
             raise HttpException(403, 'No username/password provided')
     except HttpException as ex:
         return str(ex.message), 403
-    except RuntimeError as ex:
+    except (RuntimeError, AttributeError, IOError) as ex:
         return str(ex.message), 403
     except ConnectionError:
         return 'Connection errors to TSHOCK server, probably a wrong IP/PORT provided in `config/tshockweb.json`', 500

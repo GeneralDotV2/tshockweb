@@ -30,7 +30,6 @@
                 } else {
                     console.log("Token in cookie is valid, continue my lord and savior");
                     $('#tshockweb_profileinfo').html(tshock.username);
-                    $("#tshockweb_profile").attr("href", base_url + "webapps/html/pages/profile.html?username="+tshock.username)
                 }
             }
         });

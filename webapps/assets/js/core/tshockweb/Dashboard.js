@@ -80,9 +80,7 @@
                     // fill registered users
                     var i;
                     for (i = 0; i < data.result.output.length; i++) {
-                        $("#tshockweb_registeredusers").append("<li class='tile'><a class='tile-content ink-reaction' " +
-                            "href='" + base_url + "webapps/html/pages/profile.html?username="
-                            + data.result.output[i].name + "&registered=true'>" +
+                        $("#tshockweb_registeredusers").append("<li class='tile'><a class='tile-content ink-reaction'>" +
                             "<div class='tile-icon'>" +
                             "<img src='../../assets/img/terraria/user_logo.png' alt='' /></div>" +
                             "<div class='tile-text'>" + data.result.output[i].name + "<small>" +
@@ -115,9 +113,7 @@
                         var ip = "no ip address supplied";
                         var username = data.result.output[i].name;
                         if (data.result.output[i].ip != ""){ip = data.result.output[i].ip}
-                        $("#tshockweb_bannedusers").append("<li class='tile'><a class='tile-content ink-reaction' " +
-                            "href='" + base_url + "webapps/html/pages/profile.html?username="
-                            + username + "&registered=true'>" +
+                        $("#tshockweb_bannedusers").append("<li class='tile'><a class='tile-content ink-reaction'>" +
                             "<div class='tile-icon'>" +
                             "<img src='../../assets/img/terraria/user_logo.png' alt='' /></div>" +
                             "<div class='tile-text'>" + data.result.output[i].name + "<small>" +
@@ -169,8 +165,7 @@
                             success: function (sub_data) {
                                 if (sub_data.status == 200) {
                                     $("#tshockweb_onlineusers").append("<li class='tile'><a class='tile-content ink-reaction'" +
-                                        "href='" + base_url + "webapps/html/pages/profile.html?username=" + username +
-                                        "&registered=" + registered + "'>" +
+                                        "href='" + base_url + "webapps/html/pages/profile.html?username=" + username +"'>" +
                                         "<div class='tile-icon'>" +
                                         "<img src='"+team_mapping[team]+"' alt='' /></div>" +
                                         "<div class='tile-text'>" + username + "<small>" +
