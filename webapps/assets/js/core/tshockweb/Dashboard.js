@@ -84,7 +84,8 @@
                             "<div class='tile-icon'>" +
                             "<img src='../../assets/img/terraria/user_logo.png' alt='' /></div>" +
                             "<div class='tile-text'>" + data.result.output[i].name + "<small>" +
-                            "" + data.result.output[i].group + "</small></div></a></li>");
+                            "" + data.result.output[i].group + "</small></div>" +
+                            "<a class='btn btn-flat ink-reaction tshockweb_remove' id='remove_"+data.result.output[i].name+"'><i class='fa fa-trash-o'></i></a></a></li>");
                     }
                 } else {
                     var message = "Collecting data for registered users on server has failed: " + JSON.stringify(data);
@@ -311,148 +312,186 @@
         }
     });
 
+    $(document).on('click', '.tshockweb_remove',function (e) {
+        var username = $(this).attr('id').split("_")[1];
+        if (window.confirm("Are you sure you want to delete the registered account of user " + username + "?")) {
+            // remove registered user
+            $.ajax({
+                type: 'POST',
+                url: base_url + "api/controllers/playercontroller/delete_player",
+                data: JSON.stringify({token: tshock.token, username: username}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        load_registered_users();
+                        toastr.success('Successfully removed registered account of user: ' + username, '');
+                    } else {
+                        var message = "Removing registered account on server has failed: " + JSON.stringify(data);
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
+                }
+            });
+        }
+    });
+
     // execute when trying to enable/disable a bloodmoon
     $('#tshockweb_bloodmoon_toggle').on('click', function (e) {
-        $.ajax({
-            type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/servercontroller/execute_cmd",
-            data: JSON.stringify({ token: tshock.token, command: "/bloodmoon" }),
-            dataType: 'json',
-            contentType: "application/json",
-            success: function (data) {
-                if (data.status == 200) {
-                    load_world_information();
-                    toastr.success('Toggled bloodmoon!');
-                } else {
-                    var message = "Toggling the bloodmoon failed: " + data.result;
-                    toastr.error(message, '');
-                    console.log(message);
+        if (window.confirm("Are you sure you want to toggle the bloodmoon?")) {
+            $.ajax({
+                type: 'POST',
+                url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/servercontroller/execute_cmd",
+                data: JSON.stringify({token: tshock.token, command: "/bloodmoon"}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        load_world_information();
+                        toastr.success('Toggled bloodmoon!');
+                    } else {
+                        var message = "Toggling the bloodmoon failed: " + data.result;
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // execute when trying to drop a meteor
     $('#tshockweb_meteor_drop').on('click', function (e) {
-        $.ajax({
-            type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/drop_meteor",
-            data: JSON.stringify({ token: tshock.token }),
-            dataType: 'json',
-            contentType: "application/json",
-            success: function (data) {
-                if (data.status == 200) {
-                    toastr.success('Dropped the meteor!');
-                } else {
-                    var message = "Dropping the meteor failed: " + data.result;
-                    toastr.error(message, '');
-                    console.log(message);
+        if (window.confirm("Are you sure you want to drop a meteor?")) {
+            $.ajax({
+                type: 'POST',
+                url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/drop_meteor",
+                data: JSON.stringify({token: tshock.token}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        toastr.success('Dropped the meteor!');
+                    } else {
+                        var message = "Dropping the meteor failed: " + data.result;
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // execute when trying to butcher npcs
     $('#tshockweb_butcher_npcs').on('click', function (e) {
-        $.ajax({
-            type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/butcher_npcs",
-            data: JSON.stringify({ token: tshock.token }),
-            dataType: 'json',
-            contentType: "application/json",
-            success: function (data) {
-                if (data.status == 200) {
-                    toastr.success(data.result.output + "!");
-                } else {
-                    var message = "Dropping the meteor failed: " + data.result;
-                    toastr.error(message, '');
-                    console.log(message);
+        if (window.confirm("Are you sure you want to butcher ALL NPCs?")) {
+            $.ajax({
+                type: 'POST',
+                url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/butcher_npcs",
+                data: JSON.stringify({token: tshock.token}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        toastr.success(data.result.output + "!");
+                    } else {
+                        var message = "Dropping the meteor failed: " + data.result;
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // execute when trying to set the daytime (day/night)
     $('.tshockweb_daytime').on('click', function (e) {
         var daytime_status = $(this).attr('id').split("_")[2];
-        $.ajax({
-            type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/servercontroller/execute_cmd",
-            data: JSON.stringify({ token: tshock.token, command: "/time " + daytime_status}),
-            dataType: 'json',
-            contentType: "application/json",
-            success: function (data) {
-                if (data.status == 200) {
-                    load_world_information();
-                    toastr.success("Successfully changed the daytime to: " + daytime_status);
-                } else {
-                    var message = "Failed to changed the daytime: " + data.result;
-                    toastr.error(message, '');
-                    console.log(message);
+        if (window.confirm("Are you sure you want to set the daytime to "+daytime_status+"?")) {
+            $.ajax({
+                type: 'POST',
+                url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/servercontroller/execute_cmd",
+                data: JSON.stringify({token: tshock.token, command: "/time " + daytime_status}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        load_world_information();
+                        toastr.success("Successfully changed the daytime to: " + daytime_status);
+                    } else {
+                        var message = "Failed to changed the daytime: " + data.result;
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // execute when trying to save the world
     $('#tshockweb_world_save').on('click', function (e) {
-        $.ajax({
-            type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/save_world",
-            data: JSON.stringify({ token: tshock.token }),
-            dataType: 'json',
-            contentType: "application/json",
-            success: function (data) {
-                if (data.status == 200) {
-                    toastr.success("World saved!");
-                } else {
-                    var message = "Saving world failed: " + data.result;
-                    toastr.error(message, '');
-                    console.log(message);
+        if (window.confirm("Are you sure you want to save the world? This can result in some lag...")) {
+            $.ajax({
+                type: 'POST',
+                url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/save_world",
+                data: JSON.stringify({token: tshock.token}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        toastr.success("World saved!");
+                    } else {
+                        var message = "Saving world failed: " + data.result;
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // execute when trying to reload config
     $('#tshockweb_server_reload').on('click', function (e) {
-        $.ajax({
-            type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/servercontroller/reload_server_configs",
-            data: JSON.stringify({ token: tshock.token }),
-            dataType: 'json',
-            contentType: "application/json",
-            success: function (data) {
-                if (data.status == 200) {
-                    toastr.success("Server config reloaded!");
-                } else {
-                    var message = "Reloading server config failed: " + data.result;
-                    toastr.error(message, '');
-                    console.log(message);
+        if (window.confirm("Are you sure you want to reload the server config?")) {
+            $.ajax({
+                type: 'POST',
+                url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/servercontroller/reload_server_configs",
+                data: JSON.stringify({token: tshock.token}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        toastr.success("Server config reloaded!");
+                    } else {
+                        var message = "Reloading server config failed: " + data.result;
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // execute when trying to set world autosave
     $('.tshockweb_world_autosave').on('click', function (e) {
         var autosave_status = ($(this).attr('id').split("_")[3] === 'true');
-        $.ajax({
-            type: 'POST',
-            url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/set_autosave_world",
-            data: JSON.stringify({ token: tshock.token, status: autosave_status}),
-            dataType: 'json',
-            contentType: "application/json",
-            success: function (data) {
-                if (data.status == 200) {
-                    toastr.success("World autosave status set to: " + autosave_status);
-                } else {
-                    var message = "Setting world autosave status failed: " + data.result;
-                    toastr.error(message, '');
-                    console.log(message);
+        if (window.confirm("Are you sure you want to set the world autosave status to "+autosave_status+"?")) {
+            $.ajax({
+                type: 'POST',
+                url: window.location.protocol + "//" + window.location.host + "/" + "api/controllers/worldcontroller/set_autosave_world",
+                data: JSON.stringify({token: tshock.token, status: autosave_status}),
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (data) {
+                    if (data.status == 200) {
+                        toastr.success("World autosave status set to: " + autosave_status);
+                    } else {
+                        var message = "Setting world autosave status failed: " + data.result;
+                        toastr.error(message, '');
+                        console.log(message);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     // load dashboard data

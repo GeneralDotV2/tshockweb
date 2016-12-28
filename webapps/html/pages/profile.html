@@ -117,11 +117,11 @@
 							</div><!--end .col -->
 						</div><!--end .row -->
 						<div class="overlay overlay-shade-bottom stick-bottom-left force-padding text-right">
-							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Unmute"><i class="md md-mic"></i></a>
-							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Mute"><i class="md md-mic-off"></i></a>
-							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Kill"><i class="md md-flash-on"></i></a>
-							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Kick"><i class="md md-report-problem"></i></a>
-							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Ban"><i class="md md-block"></i></a>
+							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Unmute" id="tshockweb_unmute"><i class="md md-mic"></i></a>
+							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Mute" id="tshockweb_mute"><i class="md md-mic-off"></i></a>
+							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Kill" id="tshockweb_kill"><i class="md md-flash-on"></i></a>
+							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Kick" id="tshockweb_kick"><i class="md md-report-problem"></i></a>
+							<a class="btn btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Ban" id="tshockweb_ban"><i class="md md-block"></i></a>
 						</div>
 					</div><!--end .section-body -->
 				</section>
@@ -138,13 +138,13 @@
 									<div class="card no-margin">
 										<div class="card-body">
 											<div class="form-group floating-label">
-												<textarea name="status" id="status" class="form-control autosize" rows="1"></textarea>
-												<label for="status">Wisper something to the player</label>
+												<textarea name="status" id="tshockweb_whisper" class="form-control autosize" rows="1"></textarea>
+												<label for="tshockweb_whisper">Whisper something to the player</label>
 											</div>
 										</div><!--end .card-body -->
 										<div class="card-actionbar">
 											<div class="card-actionbar-row">
-												<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction">Send</a>
+												<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction" id="tshockweb_whisper_send">Send</a>
 											</div><!--end .card-actionbar-row -->
 										</div><!--end .card-actionbar -->
 									</div><!--end .card -->
@@ -314,6 +314,7 @@
 		<script src="../../assets/js/core/tshockweb/Notifications.js"></script>
 		<script src="../../assets/js/core/tshockweb/Authenticate.js"></script>
 		<script src="../../assets/js/core/tshockweb/ServerManager.js"></script>
+		<script src="../../assets/js/core/tshockweb/UserManager.js"></script>
 		<!-- END JAVASCRIPT -->
 
 	</body>

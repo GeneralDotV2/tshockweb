@@ -148,10 +148,11 @@
                     var registered = data.result.output.registered.split("T");
 
                     // clear & set user settings
+                    console.log(data);
                     $("#tshockweb_profile_ip").html(data.result.output.ip);
                     $("#tshockweb_profile_position").html(data.result.output.position);
                     if (data.result.output.registered != "") {
-                        $("#tshockweb_profile_registered").html(registered[0] + " " + registered[1]);
+                        $("#tshockweb_profile_registered").html(registered[0] + " " + registered[1] + " as " + data.result.output.username);
                     }
                     else {
                         $("#tshockweb_profile_registered").html("Not yet registered!");
@@ -216,6 +217,27 @@
         load_player_information();
         load_player_team_information();
         toastr.success('Successfully refreshed profile data!', '');
+    });
+
+    $('#tshockweb_whisper_send').on('click', function (e) {
+        var whisper_message = $('#tshockweb_whisper').val();
+        $.ajax({
+            type: 'POST',
+            url: base_url + "api/controllers/servercontroller/execute_cmd",
+            data: JSON.stringify({token: tshock.token, command: "/whisper " + url_params.username + " " + whisper_message}),
+            dataType: 'json',
+            contentType: "application/json",
+            success: function (data) {
+                if (data.status == 200) {
+                    $('#tshockweb_whisper').val("");
+                    toastr.success("Successfully whispered `" + whisper_message + "` to user!", '');
+                } else {
+                    var message = "Sending whisper to user has failed: " + JSON.stringify(data);
+                    toastr.error(message, '');
+                    console.log(message);
+                }
+            }
+        });
     });
 
     load_player_information();
