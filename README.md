@@ -43,7 +43,7 @@ api = TSHOCKClient(ip="tshock-api-url", port=7878, username='superadmin-username
 print PlayerList.get_current_players(api=api)
 ```
 
-* Easy REST API: 
+* Easy API: 
 ```
 import requests
 
